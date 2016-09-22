@@ -76,6 +76,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 		Collections.sort(tempList);
 
 		for(int i = 0; i < NUM_BIGRAMS && i < tempList.size(); i++) {
+      if(verbose && i < 100) debug(tempList.get(i).s +": " + tempList.get(i).n);
 			bigrams.add(tempList.get(i).s);
 		}
 	}
@@ -144,7 +145,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 	 * "-feedback" to allow relevance feedback from the user.
 	 */
 	public static void main(String[] args) {
-		debug("**use flag -v to see full output");
+
 
 		// Parse the arguments into a directory name and optional flag
 
@@ -171,6 +172,8 @@ public class InvertedPhraseIndex extends InvertedIndex {
 				throw new IllegalArgumentException("Unknown flag: "+ flag);
 		}
 
+    if(!verbose)
+      debug("**use flag -v to see full output**");
 
 		// Create an inverted index for the files in the given directory.
 		InvertedPhraseIndex index = new InvertedPhraseIndex(new File(dirName), docType, stem, feedback);

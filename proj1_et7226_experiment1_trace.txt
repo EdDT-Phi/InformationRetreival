@@ -1,0 +1,218 @@
+Script started on Wed 21 Sep 2016 08:32:51 PM CDT
+proj1-draft -> java ir.vsr.InvertedPhraseIndex -html -v /u/mooney/ir-code/corpora/cs-faculty/
+Populating Bigrams
+computer science: 1942
+nqthm examples: 1609
+university texas: 1321
+ftp nqthm: 1258
+nqthm nqthm: 1254
+texas austin: 1206
+pc nqthm: 1128
+department computer: 989
+peter stone: 782
+artificial intelligence: 597
+international conference: 575
+cs utexas: 575
+ftp pc: 560
+nqthm pc: 560
+prospective students: 512
+degree plans: 487
+portfolio program: 480
+program robotics: 477
+teaching plans: 466
+machine learning: 463
+class homepages: 459
+science university: 458
+student homepages: 456
+ps ftp: 445
+raymond mooney: 430
+austin tx: 399
+yin zhang: 371
+computer sciences: 365
+ut austin: 353
+ftp cli: 330
+bibtex download: 329
+details bibtex: 328
+operating systems: 328
+campus austin: 323
+mission statement: 320
+statement news: 318
+directory contact: 318
+news campus: 318
+research areas: 310
+examples yu: 306
+ph program: 302
+graduate school: 298
+cli reports: 296
+current students: 290
+elements computing: 287
+entry level: 285
+masters program: 279
+mobile computing: 278
+technical report: 277
+undergraduate research: 272
+graduate student: 270
+download kb: 268
+student engagement: 266
+incoming students: 266
+game development: 266
+engagement support: 266
+financial information: 264
+grad student: 262
+undergraduate admissions: 261
+students current: 260
+examples basic: 259
+graduate masters: 259
+graduate office: 259
+awards honors: 258
+practical training: 257
+computer vision: 257
+curricular practical: 257
+student talks: 255
+events ftp: 255
+training fellowships: 254
+students portfolio: 254
+forms grad: 254
+fellowships forms: 254
+robotics curricular: 254
+information prospective: 254
+study abroad: 253
+lecture notes: 253
+austin speedway: 252
+speedway stop: 252
+phone fax: 251
+stop austin: 251
+degree requirements: 250
+proceedings international: 249
+diversity courses: 249
+honors programs: 247
+level courses: 247
+scholarship service: 246
+curriculum degree: 246
+certificate programs: 246
+academics advising: 244
+kb ps: 244
+women computing: 243
+science focs: 242
+student organizations: 242
+students apply: 242
+friends computer: 241
+admissions faq: 241
+programs scholarship: 240
+service student: 240
+faq honors: 240
+Indexing documents in /u/mooney/ir-code/corpora/cs-faculty
+P001.html,P002.html,P003.html,P004.html,P005.html,P006.html,P007.html,P008.html,P009.html,P010.html,P011.html,P012.html,P013.html,P014.html,P015.html,P016.html,P017.html,P018.html,P019.html,P020.html,P021.html,P022.html,P023.html,P024.html,P025.html,P026.html,P027.html,P028.html,P029.html,P030.html,P031.html,P032.html,P033.html,P034.html,P035.html,P036.html,P037.html,P038.html,P039.html,P040.html,P041.html,P042.html,P043.html,P044.html,P045.html,P046.html,P047.html,P048.html,P049.html,P050.html,P051.html,P052.html,P053.html,P054.html,P055.html,P056.html,P057.html,P058.html,P059.html,P060.html,P061.html,P062.html,P063.html,P064.html,P065.html,P066.html,P067.html,P068.html,P069.html,P070.html,P071.html,P072.html,P073.html,P074.html,P075.html,P076.html,P077.html,P078.html,P079.html,P080.html,P081.html,P082.html,P083.html,P084.html,P085.html,P086.html,P087.html,P088.html,P089.html,P090.html,P091.html,P092.html,P093.html,P094.html,P095.html,P096.html,P097.html,P098.html,P099.html,P100.html,P101.html,P102.html,P103.html,P104.html,P105.html,P106.html,P107.html,P108.html,P109.html,P110.html,P111.html,P112.html,P113.html,P114.html,P115.html,P116.html,P117.html,P118.html,P119.html,P120.html,P121.html,P122.html,P123.html,P124.html,P125.html,P126.html,P127.html,P128.html,P129.html,P130.html,P131.html,P132.html,P133.html,P134.html,P135.html,P136.html,P137.html,P138.html,P139.html,P140.html,P141.html,P142.html,P143.html,P144.html,P145.html,P146.html,P147.html,P148.html,P149.html,P150.html,P151.html,P152.html,P153.html,P154.html,P155.html,P156.html,P157.html,P158.html,P159.html,P160.html,P161.html,P162.html,P163.html,P164.html,P165.html,P166.html,P167.html,P168.html,P169.html,P170.html,P171.html,P172.html,P173.html,P174.html,P175.html,P176.html,P177.html,P178.html,P179.html,P180.html,P181.html,P182.html,P183.html,P184.html,P185.html,P186.html,P187.html,P188.html,P189.html,P190.html,P191.html,P192.html,P193.html,P194.html,P195.html,P196.html,P197.html,P198.html,P199.html,P200.html,P201.html,P202.html,P203.html,P204.html,P205.html,P206.html,P207.html,P208.html,P209.html,P210.html,P211.html,P212.html,P213.html,P214.html,P215.html,P216.html,P217.html,P218.html,P219.html,P220.html,P221.html,P222.html,P223.html,P224.html,P225.html,P226.html,P227.html,P228.html,P229.html,P230.html,P231.html,P232.html,P233.html,P234.html,P235.html,P236.html,P237.html,P238.html,P239.html,P240.html,P241.html,P242.html,P243.html,P244.html,P245.html,P246.html,P247.html,P248.html,P249.html,P250.html,P251.html,P252.html,P253.html,P254.html,P255.html,P256.html,P257.html,P258.html,P259.html,P260.html,P261.html,P262.html,P263.html,P264.html,P265.html,P266.html,P267.html,P268.html,P269.html,P270.html,P271.html,P272.html,P273.html,P274.html,P275.html,P276.html,P277.html,P278.html,P279.html,P280.html,P281.html,P282.html,P283.html,P284.html,P285.html,P286.html,P287.html,P288.html,P289.html,P290.html,P291.html,P292.html,P293.html,P294.html,P295.html,P296.html,P297.html,P298.html,P299.html,P300.html,P301.html,P302.html,P303.html,P304.html,P305.html,P306.html,P307.html,P308.html,P309.html,P310.html,P311.html,P312.html,P313.html,P314.html,P315.html,P316.html,P317.html,P318.html,P319.html,P320.html,P321.html,P322.html,P323.html,P324.html,P325.html,P326.html,P327.html,P328.html,P329.html,P330.html,P331.html,P332.html,P333.html,P334.html,P335.html,P336.html,P337.html,P338.html,P339.html,P340.html,P341.html,P342.html,P343.html,P344.html,P345.html,P346.html,P347.html,P348.html,P349.html,P350.html,P351.html,P352.html,P353.html,P354.html,P355.html,P356.html,P357.html,P358.html,P359.html,P360.html,P361.html,P362.html,P363.html,P364.html,P365.html,P366.html,P367.html,P368.html,P369.html,P370.html,P371.html,P372.html,P373.html,P374.html,P375.html,P376.html,P377.html,P378.html,P379.html,P380.html,P381.html,P382.html,P383.html,P384.html,P385.html,P386.html,P387.html,P388.html,P389.html,P390.html,P391.html,P392.html,P393.html,P394.html,P395.html,P396.html,P397.html,P398.html,P399.html,P400.html,P401.html,P402.html,P403.html,P404.html,P405.html,P406.html,P407.html,P408.html,P409.html,P410.html,P411.html,P412.html,P413.html,P414.html,P415.html,P416.html,P417.html,P418.html,P419.html,P420.html,P421.html,P422.html,P423.html,P424.html,P425.html,P426.html,P427.html,P428.html,P429.html,P430.html,P431.html,P432.html,P433.html,P434.html,P435.html,P436.html,P437.html,P438.html,P439.html,P440.html,P441.html,P442.html,P443.html,P444.html,P445.html,P446.html,P447.html,P448.html,P449.html,P450.html,P451.html,P452.html,P453.html,P454.html,P455.html,P456.html,P457.html,P458.html,P459.html,P460.html,P461.html,P462.html,P463.html,P464.html,P465.html,P466.html,P467.html,P468.html,P469.html,P470.html,P471.html,P472.html,P473.html,P474.html,P475.html,P476.html,P477.html,P478.html,P479.html,P480.html,P481.html,P482.html,P483.html,P484.html,P485.html,P486.html,P487.html,P488.html,P489.html,P490.html,P491.html,P492.html,P493.html,P494.html,P495.html,P496.html,P497.html,P498.html,P499.html,P500.html,P501.html,P502.html,P503.html,P504.html,P505.html,P506.html,P507.html,P508.html,P509.html,P510.html,P511.html,P512.html,P513.html,P514.html,P515.html,P516.html,P517.html,P518.html,P519.html,P520.html,P521.html,P522.html,P523.html,P524.html,P525.html,P526.html,P527.html,P528.html,P529.html,P530.html,P531.html,P532.html,P533.html,P534.html,P535.html,P536.html,P537.html,P538.html,P539.html,P540.html,P541.html,P542.html,P543.html,P544.html,P545.html,P546.html,P547.html,P548.html,P549.html,P550.html,P551.html,P552.html,P553.html,P554.html,P555.html,P556.html,P557.html,P558.html,P559.html,P560.html,P561.html,P562.html,P563.html,P564.html,P565.html,P566.html,P567.html,P568.html,P569.html,P570.html,P571.html,P572.html,P573.html,P574.html,P575.html,P576.html,P577.html,P578.html,P579.html,P580.html,P581.html,P582.html,P583.html,P584.html,P585.html,P586.html,P587.html,P588.html,P589.html,P590.html,P591.html,P592.html,P593.html,P594.html,P595.html,P596.html,P597.html,P598.html,P599.html,P600.html,P601.html,P602.html,P603.html,P604.html,P605.html,P606.html,P607.html,P608.html,P609.html,P610.html,P611.html,P612.html,P613.html,P614.html,P615.html,P616.html,P617.html,P618.html,P619.html,P620.html,P621.html,P622.html,P623.html,P624.html,P625.html,P626.html,P627.html,P628.html,P629.html,P630.html,P631.html,P632.html,P633.html,P634.html,P635.html,P636.html,P637.html,P638.html,P639.html,P640.html,P641.html,P642.html,P643.html,P644.html,P645.html,P646.html,P647.html,P648.html,P649.html,P650.html,P651.html,P652.html,P653.html,P654.html,P655.html,P656.html,P657.html,P658.html,P659.html,P660.html,P661.html,P662.html,P663.html,P664.html,P665.html,P666.html,P667.html,P668.html,P669.html,P670.html,P671.html,P672.html,P673.html,P674.html,P675.html,P676.html,P677.html,P678.html,P679.html,P680.html,P681.html,P682.html,P683.html,P684.html,P685.html,P686.html,P687.html,P688.html,P689.html,P690.html,P691.html,P692.html,P693.html,P694.html,P695.html,P696.html,P697.html,P698.html,P699.html,P700.html,P701.html,P702.html,P703.html,P704.html,P705.html,P706.html,P707.html,P708.html,P709.html,P710.html,P711.html,P712.html,P713.html,P714.html,P715.html,P716.html,P717.html,P718.html,P719.html,P720.html,P721.html,P722.html,P723.html,P724.html,P725.html,P726.html,P727.html,P728.html,P729.html,P730.html,P731.html,P732.html,P733.html,P734.html,P735.html,P736.html,P737.html,P738.html,P739.html,P740.html,P741.html,P742.html,P743.html,P744.html,P745.html,P746.html,P747.html,P748.html,P749.html,P750.html,P751.html,P752.html,P753.html,P754.html,P755.html,P756.html,P757.html,P758.html,P759.html,P760.html,P761.html,P762.html,P763.html,P764.html,P765.html,P766.html,P767.html,P768.html,P769.html,P770.html,P771.html,P772.html,P773.html,P774.html,P775.html,P776.html,P777.html,P778.html,P779.html,P780.html,P781.html,P782.html,P783.html,P784.html,P785.html,P786.html,P787.html,P788.html,P789.html,P790.html,P791.html,P792.html,P793.html,P794.html,P795.html,P796.html,P797.html,P798.html,P799.html,P800.html,
+Indexed 800 documents with 23257 unique terms.
+Now able to process queries. When done, enter an empty query to exit.
+
+Enter query:  file systems
+
+Top 10 matching Documents from most to least relevant:
+
+1.  P034.html            Score: 0.18429
+2.  P758.html            Score: 0.12684
+3.  P033.html            Score: 0.1177
+4.  P757.html            Score: 0.10196
+5.  P339.html            Score: 0.09045
+6.  P652.html            Score: 0.08143
+7.  P650.html            Score: 0.07821
+8.  P028.html            Score: 0.06841
+9.  P756.html            Score: 0.06476
+10. P360.html            Score: 0.05785
+
+Enter `m' to see more, a number to show the nth document, nothing to exit.
+
+ Enter command:  1
+Showing document 1 in the firefox window.
+
+ Enter command:  2
+Showing document 2 in the firefox window.
+
+ Enter command:  3
+Showing document 3 in the firefox window.
+
+ Enter command:  4
+Showing document 4 in the firefox window.
+
+ Enter command:  5
+Showing document 5 in the firefox window.
+
+ Enter command:
+
+Enter query:  logic programming
+
+Top 10 matching Documents from most to least relevant:
+
+1.  P487.html            Score: 0.39894
+2.  P486.html            Score: 0.24923
+3.  P075.html            Score: 0.16863
+4.  P074.html            Score: 0.15741
+5.  P489.html            Score: 0.12949
+6.  P647.html            Score: 0.09516
+7.  P651.html            Score: 0.08488
+8.  P648.html            Score: 0.0823
+9.  P306.html            Score: 0.07158
+10. P453.html            Score: 0.04342
+
+Enter `m' to see more, a number to show the nth document, nothing to exit.
+
+ Enter command:  1
+Showing document 1 in the firefox window.
+
+ Enter command:  2
+Showing document 2 in the firefox window.
+
+ Enter command:  3
+Showing document 3 in the firefox window.
+
+ Enter command:  4
+Showing document 4 in the firefox window.
+
+ Enter command:  5
+Showing document 5 in the firefox window.
+
+ Enter command:  6
+Showing document 6 in the firefox window.
+
+ Enter command:
+
+
+Enter query:  learning theory
+
+Top 10 matching Documents from most to least relevant:
+
+1.  P642.html            Score: 0.27019
+2.  P053.html            Score: 0.18901
+3.  P475.html            Score: 0.16662
+4.  P014.html            Score: 0.10305
+5.  P576.html            Score: 0.08414
+6.  P415.html            Score: 0.08058
+7.  P067.html            Score: 0.07176
+8.  P477.html            Score: 0.0429
+9.  P091.html            Score: 0.04107
+10. P579.html            Score: 0.04107
+
+Enter `m' to see more, a number to show the nth document, nothing to exit.
+
+ Enter command:  1
+Showing document 1 in the firefox window.
+
+ Enter command:  2
+Showing document 2 in the firefox window.
+
+ Enter command:  3
+Showing document 3 in the firefox window.
+
+ Enter command:  4
+Showing document 4 in the firefox window.
+
+ Enter command:  5
+Showing document 5 in the firefox window.
+
+ Enter command:  
+
+Enter query:  
+proj1-draft -> exit
+
+Script done on Wed 21 Sep 2016 08:37:16 PM CDT
