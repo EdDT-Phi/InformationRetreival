@@ -11,9 +11,10 @@ import ir.classifiers.*;
  * An inverted index for vector-space information retrieval. Contains
  * methods for creating an inverted index from a set of documents
  * and retrieving ranked matches to queries using standard TF/IDF
- * weighting and cosine similarity.
+ * weighting and cosine similarity. This version includes the
+ * functionality of indexing and querying on bigrams.
  *
- * @author Ray Mooney
+ * @author Eddie Tribaldos
  */
 public class InvertedPhraseIndex extends InvertedIndex {
 
@@ -23,7 +24,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 	public HashSet<String> bigrams;
 
 	/**
-	 * List to store bigrams
+	 * Number of bigrams to store
 	 */
 	public final int NUM_BIGRAMS = 1000;
 
@@ -43,7 +44,6 @@ public class InvertedPhraseIndex extends InvertedIndex {
   /**
    * Class to be able to sort bigrams as a Collection thanks to Comparable
    */
-
 	public class Bigram implements Comparable<Bigram> {
 		String s;
 		int n;
@@ -83,7 +83,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 
     // Convert to Hashset
 		for(int i = 0; i < NUM_BIGRAMS && i < tempList.size(); i++) {
-      if(verbose && i < 100) debug(tempList.get(i).s +": " + tempList.get(i).n);
+      if(verbose && i < 100) terminal(tempList.get(i).s +": " + tempList.get(i).n);
 			bigrams.add(tempList.get(i).s);
 		}
 	}
@@ -181,13 +181,13 @@ public class InvertedPhraseIndex extends InvertedIndex {
 		}
 
     if(!verbose)
-      debug("**use flag -v to see full output**");
+      terminal("**use flag -v to see full output**");
 
 		// Create an inverted index for the files in the given directory.
 		InvertedPhraseIndex index = new InvertedPhraseIndex(new File(dirName), docType, stem, feedback);
 		index.print();
 
-		debug("Populating Bigrams");
+		terminal("Populating Bigrams");
 		index.populateBigrams();
 		index.indexDocuments();
 		index.processQueries();

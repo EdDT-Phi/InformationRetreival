@@ -531,7 +531,8 @@ public class InvertedIndex {
     InvertedIndex index = new InvertedIndex(new File(dirName), docType, stem, feedback);
     index.indexDocuments();
     // index.print();
-    // Interactively process queries to this index.
+
+    // Interactively process queries to this index. Moved here from constructor
     index.processQueries();
   }
 
@@ -547,7 +548,7 @@ public class InvertedIndex {
    * Used as a smaller version of System.out.println, ignoring verbose
    * @param s   The string to print
    */
-  public static void debug(String s) {
+  public static void terminal(String s) {
     console(s, true, '\n');
   }
 
