@@ -106,7 +106,7 @@ public class InvertedIndex {
       FileDocument doc = docIter.nextDocument();
       // Create a document vector for this document
       System.out.print(doc.file.getName() + ",");
-      HashMapVector vector = doc.hashMapVector();
+      HashMapVector vector = getHashMapVector(doc);
       indexDocument(doc, vector);
     }
     // Now that all documents have been processed, we can calculate the IDF weights for
@@ -260,7 +260,7 @@ public class InvertedIndex {
    * Perform ranked retrieval on this input query Document.
    */
   public Retrieval[] retrieve(Document doc) {
-    return retrieve(doc.hashMapVector());
+    return retrieve(getHashMapVector(doc));
   }
 
   /**
@@ -377,11 +377,20 @@ public class InvertedIndex {
       if (query.equals(""))
         break;
       // Get the ranked retrievals for this query string and present them
-      HashMapVector queryVector = (new TextStringDocument(query, stem)).hashMapVector();
+      HashMapVector queryVector = getHashMapVector(new TextStringDocument(query, stem));
       Retrieval[] retrievals = retrieve(queryVector);
       presentRetrievals(queryVector, retrievals);
     }
     while (true);
+  }
+
+  /**
+   * Added this function to have a single function to override
+   * modified all functions to use this insted of calling it themselves
+   */
+
+  public HashMapVector getHashMapVector(Document doc) {
+    return doc.hashMapVector();
   }
 
   /**

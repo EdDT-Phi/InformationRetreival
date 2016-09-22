@@ -88,60 +88,9 @@ public class InvertedPhraseIndex extends InvertedIndex {
 		}
 	}
 
-
-	/**
-	 * Index the documents in dirFile. Modified to pass in bigrams
-	 */
-	protected void indexDocuments() {
-		if (!tokenHash.isEmpty() || !docRefs.isEmpty()) {
-			// Currently can only index one set of documents when an index is created
-			throw new IllegalStateException("Cannot indexDocuments more than once in the same InvertedIndex");
-		}
-		// Get an iterator for the documents
-		DocumentIterator docIter = new DocumentIterator(dirFile, docType, stem);
-		System.out.println("Indexing documents in " + dirFile);
-
-		// Loop, processing each of the documents
-		while (docIter.hasMoreDocuments()) {
-			FileDocument doc = docIter.nextDocument();
-
-			// Create a document vector for this document
-			console(doc.file.getName(), false, ',');
-			HashMapVector vector = doc.hashMapVector(bigrams);
-			indexDocument(doc, vector);
-		}
-
-		// Now that all documents have been processed, we can calculate the IDF weights for
-		// all tokens and the resulting lengths of all weighted document vectors.
-		computeIDFandDocumentLengths();
-		System.out.println("\nIndexed " + docRefs.size() + " documents with " + size() + " unique terms.");
-	}
-
-	/**
-	 * Perform ranked retrieval on this input query Document. Modified to pass in bigrams
-	 */
-	public Retrieval[] retrieve(Document doc) {
-		return retrieve(doc.hashMapVector(bigrams));
-	}
-
-	/**
-	 * Enter an interactive user-query loop, accepting queries and showing the retrieved
-	 * documents in ranked order. Modified to pass in bigrams.
-	 */
-	public void processQueries() {
-
-		System.out.println("Now able to process queries. When done, enter an empty query to exit.");
-
-		// Loop indefinitely answering queries and get a query from the console
-		// If query is empty then exit the interactive loop
-		String query;
-		while (!(query = UserInput.prompt("\nEnter query:  ")).equals("")) {
-			// Get the ranked retrievals for this query string and present them
-			HashMapVector queryVector = (new TextStringDocument(query, stem)).hashMapVector(bigrams);
-			Retrieval[] retrievals = retrieve(queryVector);
-			presentRetrievals(queryVector, retrievals);
-		}
-	}
+  public HashMapVector getHashMapVector(Document doc) {
+    return doc.hashMapVector(bigrams);
+  }
 
 	/**
 	 * Index a directory of files and then interactively accept retrieval queries.
@@ -185,7 +134,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 
 		// Create an inverted index for the files in the given directory.
 		InvertedPhraseIndex index = new InvertedPhraseIndex(new File(dirName), docType, stem, feedback);
-		index.print();
+    // index.print();
 
 		terminal("Populating Bigrams");
 		index.populateBigrams();
