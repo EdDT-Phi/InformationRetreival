@@ -535,15 +535,28 @@ public class InvertedIndex {
     index.processQueries();
   }
 
-
+  /**
+   * Used as a smaller version of System.out.println, keeping in mind verbose
+   * @param s   The string to print
+   */
   public static void console(String s){
     console(s, false, '\n');
   }
 
+  /**
+   * Used as a smaller version of System.out.println, ignoring verbose
+   * @param s   The string to print
+   */
   public static void debug(String s) {
     console(s, true, '\n');
   }
 
+  /**
+   * Used as a smaller version of System.out.println
+   * @param s       The string to print
+   * @param force   Should we ignore verbose?
+   * @param delim   This can be changed to print without adding a new line
+   */
   public static void console(String s, boolean force, char delim) {
     if(verbose || force) {
       System.out.print(s + delim);

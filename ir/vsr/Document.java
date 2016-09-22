@@ -182,11 +182,9 @@ public abstract class Document {
   }
 
   /**
-   * Returns a hashmap version of the term-vector (bag of words) for this
-   * document, where each token is a key whose value is the number of times
-   * it occurs in the document as stored in a Weight.
-   *
-   * @see Weight
+   * Like hashMapVector but takes in a set of bigrams
+   * Adds bigrams to the vector and don't add individual words
+   * if the bigram is present in the set
    */
   public HashMapVector hashMapVector(HashSet<String> bigrams) {
     if (numTokens != 0)
@@ -214,16 +212,8 @@ public abstract class Document {
   }
 
   /**
-   * Returns a hashmap for this
-   * document, where each token is a key whose value is the number of times
-   * it occurs in the document as stored in a Weight.
+   * Increments on the map the count for every bigram in the document
    */
-  public HashMap<String, Integer> hashMapVectorBigrams() {
-    HashMap<String, Integer> map = new HashMap<String, Integer>();
-    hashMapVectorBigrams(map);
-    return map;    
-  }
-
   public void hashMapVectorBigrams(HashMap<String, Integer> map) {
     String prev = nextToken();
     String token;

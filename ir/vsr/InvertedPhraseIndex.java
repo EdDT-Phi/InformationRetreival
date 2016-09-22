@@ -40,6 +40,10 @@ public class InvertedPhraseIndex extends InvertedIndex {
 		bigrams = new HashSet<String>();
 	}
 
+  /**
+   * Class to be able to sort bigrams as a Collection thanks to Comparable
+   */
+
 	public class Bigram implements Comparable<Bigram> {
 		String s;
 		int n;
@@ -55,26 +59,29 @@ public class InvertedPhraseIndex extends InvertedIndex {
 	}
 
 	/**
-	 *
+	 * Function to populate bigrams
+   * First stores as a hashmap to quickly store count
+   * Then stores as a list to nbe able to sort
+   * Finally moves to a HashSet for constant time search
 	 */
 	protected void populateBigrams() {
 		DocumentIterator  docIter = new DocumentIterator(dirFile, docType, stem);
 		HashMap<String, Integer> tempStore = new HashMap<String, Integer>();
 
+    // Populate hashmap by iteratomg through all the documents
 		while (docIter.hasMoreDocuments()) {
 			FileDocument doc = docIter.nextDocument();
-
 			doc.hashMapVectorBigrams(tempStore);
 		}
 
-		//convert HashMap to HashSet
+		// Convert HashMap to List and sort
 		List<Bigram> tempList = new ArrayList<Bigram>();
 		for(String s: tempStore.keySet()) {
 			tempList.add(new Bigram(s, tempStore.get(s)));
 		}
-
 		Collections.sort(tempList);
 
+    // Convert to Hashset
 		for(int i = 0; i < NUM_BIGRAMS && i < tempList.size(); i++) {
       if(verbose && i < 100) debug(tempList.get(i).s +": " + tempList.get(i).n);
 			bigrams.add(tempList.get(i).s);
@@ -83,7 +90,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 
 
 	/**
-	 * Index the documents in dirFile.
+	 * Index the documents in dirFile. Modified to pass in bigrams
 	 */
 	protected void indexDocuments() {
 		if (!tokenHash.isEmpty() || !docRefs.isEmpty()) {
@@ -93,17 +100,17 @@ public class InvertedPhraseIndex extends InvertedIndex {
 		// Get an iterator for the documents
 		DocumentIterator docIter = new DocumentIterator(dirFile, docType, stem);
 		System.out.println("Indexing documents in " + dirFile);
-		// Loop, processing each of the documents
 
+		// Loop, processing each of the documents
 		while (docIter.hasMoreDocuments()) {
 			FileDocument doc = docIter.nextDocument();
+
 			// Create a document vector for this document
-
-
 			console(doc.file.getName(), false, ',');
 			HashMapVector vector = doc.hashMapVector(bigrams);
 			indexDocument(doc, vector);
 		}
+
 		// Now that all documents have been processed, we can calculate the IDF weights for
 		// all tokens and the resulting lengths of all weighted document vectors.
 		computeIDFandDocumentLengths();
@@ -111,7 +118,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 	}
 
 	/**
-	 * Perform ranked retrieval on this input query Document.
+	 * Perform ranked retrieval on this input query Document. Modified to pass in bigrams
 	 */
 	public Retrieval[] retrieve(Document doc) {
 		return retrieve(doc.hashMapVector(bigrams));
@@ -119,7 +126,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 
 	/**
 	 * Enter an interactive user-query loop, accepting queries and showing the retrieved
-	 * documents in ranked order.
+	 * documents in ranked order. Modified to pass in bigrams.
 	 */
 	public void processQueries() {
 
@@ -143,12 +150,12 @@ public class InvertedPhraseIndex extends InvertedIndex {
 	 * "-html" to specify HTML files whose HTML tags should be removed.
 	 * "-stem" to specify tokens should be stemmed with Porter stemmer.
 	 * "-feedback" to allow relevance feedback from the user.
+   * "-v" to run the program verbosely
 	 */
 	public static void main(String[] args) {
 
 
 		// Parse the arguments into a directory name and optional flag
-
 		if(args.length == 0)
 			throw new IllegalArgumentException("No corpus directory specified");
 
@@ -167,6 +174,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 				// Use relevance feedback
 				feedback = true;
 			else if (flag.equals("-v"))
+        // Be verbose
 				verbose = true;
 			else
 				throw new IllegalArgumentException("Unknown flag: "+ flag);
@@ -181,9 +189,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 
 		debug("Populating Bigrams");
 		index.populateBigrams();
-		// debug("indexDocuments");
 		index.indexDocuments();
-		// Interactively process queries to this index.
 		index.processQueries();
 	}
 }
