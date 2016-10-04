@@ -60,6 +60,18 @@ public class Feedback {
   }
 
   /**
+   * Create a feedback object for this query with initial retrievals to be rated
+   */
+  public Feedback(HashMapVector queryVector, Retrieval[] retrievals, InvertedIndex invertedIndex, double alpha, double beta, double gamma) {
+    this.queryVector = queryVector;
+    this.retrievals = retrievals;
+    this.invertedIndex = invertedIndex;
+    this.ALPHA = alpha;
+    this.BETA = beta;
+    this.GAMMA = gamma;
+  }
+
+  /**
    * Add a document to the list of those deemed relevant
    */
   public void addGood(DocumentReference docRef) {
@@ -97,6 +109,15 @@ public class Feedback {
       badDocRefs.add(docRef);
     else if (!response.equals("u"))
       getFeedback(showNumber);
+  }
+
+  /*
+   * Mark the first m documents as relevant
+   */
+  public void pseudoFeedback(int m) {
+    for(int i = 0; i < m; i++) {
+      goodDocRefs.add(retrievals[i].docRef);
+    }
   }
 
   /**

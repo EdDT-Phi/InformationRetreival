@@ -81,6 +81,7 @@ public class Experiment {
       throws IOException {
     this.corpusDir = corpusDir;
     this.index = new InvertedIndex(corpusDir, docType, stem, false);
+
     this.queryFile = queryFile;
     this.outFile = outFile;
   }
@@ -284,7 +285,9 @@ public class Experiment {
     String queryFile = args[args.length - 2];
     String outFile = args[args.length - 1];
     short docType = DocumentIterator.TYPE_TEXT;
-    boolean stem = false;
+    boolean stem = false, pseudofeedback = false;
+    int m = 0;
+    double alpha, beta, gamma;
     for (int i = 0; i < args.length - 3; i++) {
       String flag = args[i];
       if (flag.equals("-html"))
@@ -293,6 +296,25 @@ public class Experiment {
       else if (flag.equals("-stem"))
         // Stem tokens with Porter stemmer
         stem = true;
+      else if (flag.equals("-pseudofeedback")) {
+        // Use relevance feedback
+        pseudofeedback = true;
+        try{
+          m = Integer.parseInt(args[++i]);
+        } catch(Exception e) {
+          System.out.println("-pseudofeedback must be followed by an int");
+          return;
+        }
+      } else if (flag.equals("-feedbackparams")) {
+        try{
+          alpha = Double.parseDouble(args[++i]);
+          beta = Double.parseDouble(args[++i]);
+          gamma = Double.parseDouble(args[++i]);
+        } catch(Exception e) {
+          System.out.println("-feedbackparams must be followed by three floating point values");
+          return;
+        }
+      }
       else {
         throw new IllegalArgumentException("Unknown flag: " + flag);
       }

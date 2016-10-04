@@ -55,6 +55,36 @@ public class InvertedIndex {
   public boolean feedback = false;
 
   /**
+   * Whether pseudo relevance feedback is used
+   */
+  public boolean pseudofeedback = false;
+
+  /**
+   * Value m for pseudofeedback
+   */
+  public int m = 0;
+
+  /**
+   * A Rochio/Ide algorithm parameter
+   */
+  public double ALPHA = 1;
+
+  /**
+   * A Rochio/Ide algorithm parameter
+   */
+  public double BETA = 1;
+
+  /**
+   * A Rochio/Ide algorithm parameter
+   */
+  public double GAMMA = 1;
+
+  /**
+   * Whether to use these params 
+   */
+  public boolean feedbackparams = false;
+
+  /**
    * Verbose flag
    */
   public static boolean verbose = false;
@@ -74,6 +104,8 @@ public class InvertedIndex {
     this.feedback = feedback;
     tokenHash = new HashMap<String, TokenInfo>();
     docRefs = new ArrayList<DocumentReference>();
+
+    indexDocuments();
   }
 
   /**
@@ -402,8 +434,18 @@ public class InvertedIndex {
     if (showRetrievals(retrievals)) {
       // Data structure for saving info about any user feedback for relevance feedback
       Feedback fdback = null;
-      if (feedback)
-        fdback = new Feedback(queryVector, retrievals, this);
+      if (feedback || pseudofeedback){
+        if(feedbackparams)
+          fdback = new Feedback(queryVector, retrievals, this, ALPHA, GAMMA, BETA);
+        else
+          fdback = new Feedback(queryVector, retrievals, this);
+
+        if(pseudofeedback)
+          fdback.pseudoFeedback(m);
+      }
+
+
+
       // The number of the last document presented
       int currentPosition = MAX_RETRIEVALS;
       // The number of a document to be displayed.  This is one one greater than the array index
@@ -456,7 +498,7 @@ public class InvertedIndex {
           System.out.println("Showing document " + showNumber + " in the " + Browser.BROWSER_NAME + " window.");
           Browser.display(retrievals[showNumber - 1].docRef.file);
           // If accepting feedback and have not rated this item, then get relevance feedback
-          if (feedback && !fdback.haveFeedback(showNumber))
+          if (feedback && !pseudofeedback && !fdback.haveFeedback(showNumber))
             fdback.getFeedback(showNumber);
         } else {
           System.out.println("No such document number: " + showNumber);
@@ -515,7 +557,9 @@ public class InvertedIndex {
 
     String dirName = args[args.length - 1];
     short docType = DocumentIterator.TYPE_TEXT;
-    boolean stem = false, feedback = false;
+    boolean stem = false, feedback = false, pseudofeedback = false, feedbackparams = true;
+    int m;
+    double alpha, beta, gamma;
     for (int i = 0; i < args.length - 1; i++) {
       String flag = args[i];
       if (flag.equals("-html"))
@@ -527,6 +571,26 @@ public class InvertedIndex {
       else if (flag.equals("-feedback"))
         // Use relevance feedback
         feedback = true;
+      else if (flag.equals("-pseudofeedback")) {
+        // Use pseudo relevance feedback
+        pseudofeedback = true;
+        try{
+          m = Integer.parseInt(args[++i]);
+        } catch(Exception e) {
+          terminal("-pseudofeedback must be followed by an int");
+          return;
+        }
+      } else if (flag.equals("-feedbackparams")) {
+        feedbackparams = true;
+        try{
+          alpha = Double.parseDouble(args[++i]);
+          beta = Double.parseDouble(args[++i]);
+          gamma = Double.parseDouble(args[++i]);
+        } catch(Exception e) {
+          terminal("-feedbackparams must be followed by three floating point values");
+          return;
+        }
+      }
       else if (flag.equals("-v"))
         // Verbose flag
         verbose = true;
@@ -538,7 +602,6 @@ public class InvertedIndex {
 
     // Create an inverted index for the files in the given directory.
     InvertedIndex index = new InvertedIndex(new File(dirName), docType, stem, feedback);
-    index.indexDocuments();
     // index.print();
 
     // Interactively process queries to this index. Moved here from constructor

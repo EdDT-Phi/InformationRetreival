@@ -37,26 +37,34 @@ public class InvertedPhraseIndex extends InvertedIndex {
 	 * @param feedback Whether relevance feedback should be used.
 	 */
 	public InvertedPhraseIndex(File dirFile, short docType, boolean stem, boolean feedback) {
-		super(dirFile, docType, stem, feedback);
-		bigrams = new HashSet<String>();
-	}
+    super(dirFile, docType, stem, feedback);
+  }
 
   /**
    * Class to be able to sort bigrams as a Collection thanks to Comparable
    */
-	public class Bigram implements Comparable<Bigram> {
-		String s;
-		int n;
-		
-		public Bigram(String _s, int _n) {
-			s = _s;
-			n = _n;
-		}
+  public class Bigram implements Comparable<Bigram> {
+    String s;
+    int n;
+    
+    public Bigram(String _s, int _n) {
+      s = _s;
+      n = _n;
+    }
 
-		public int compareTo(Bigram bg) {
-			return bg.n - n;
-		}
-	}
+    public int compareTo(Bigram bg) {
+      return bg.n - n;
+    }
+  }
+
+  /**
+   * Index the documents in dirFile.
+   */
+  protected void indexDocuments() {
+    bigrams = new HashSet<String>();
+    populateBigrams();
+    super.indexDocuments();
+  }
 
 	/**
 	 * Function to populate bigrams
@@ -137,8 +145,6 @@ public class InvertedPhraseIndex extends InvertedIndex {
     // index.print();
 
 		terminal("Populating Bigrams");
-		index.populateBigrams();
-		index.indexDocuments();
 		index.processQueries();
 	}
 }
