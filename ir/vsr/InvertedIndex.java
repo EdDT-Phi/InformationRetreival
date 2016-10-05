@@ -97,6 +97,25 @@ public class InvertedIndex {
    * @param stem     Whether tokens should be stemmed with Porter stemmer.
    * @param feedback Whether relevance feedback should be used.
    */
+  public InvertedIndex(File dirFile, short docType, boolean stem, boolean feedback) {
+    this.dirFile = dirFile;
+    this.docType = docType;
+    this.stem = stem;
+    this.feedback = feedback;
+    tokenHash = new HashMap<String, TokenInfo>();
+    docRefs = new ArrayList<DocumentReference>();
+
+    indexDocuments();
+  }
+
+    /**
+   * Create an inverted index of the documents in a directory.
+   *
+   * @param dirFile  The directory of files to index.
+   * @param docType  The type of documents to index (See docType in DocumentIterator)
+   * @param stem     Whether tokens should be stemmed with Porter stemmer.
+   * @param feedback Whether relevance feedback should be used.
+   */
   public InvertedIndex(File dirFile, short docType, boolean stem, boolean feedback, boolean pseudofeedback, int m, double alpha, double beta, double gamma) {
     this.dirFile = dirFile;
     this.docType = docType;
@@ -336,9 +355,24 @@ public class InvertedIndex {
       double score = entry.getValue().value;
       retrievals[retrievalCount++] = getRetrieval(queryLength, docRef, score);
     }
+
+
+
     // Sort the retrievals to produce a final ranked list using the
     // Comparator for retrievals that produces a best to worst ordering.
     Arrays.sort(retrievals);
+
+
+    if(retrievals.length > 0 &&  pseudofeedback){
+      Feedback fdback = new Feedback(vector, retrievals, this, ALPHA, BETA, GAMMA);
+      fdback.pseudoFeedback(m);
+      vector = fdback.newQuery();
+      pseudofeedback = false;
+      retrievals = retrieve(vector);
+      pseudofeedback = true;
+    }
+
+
     return retrievals;
   }
 
@@ -416,6 +450,7 @@ public class InvertedIndex {
       // Get the ranked retrievals for this query string and present them
       HashMapVector queryVector = getHashMapVector(new TextStringDocument(query, stem));
       Retrieval[] retrievals = retrieve(queryVector);
+
       presentRetrievals(queryVector, retrievals);
     }
     while (true);
@@ -439,14 +474,11 @@ public class InvertedIndex {
     if (showRetrievals(retrievals)) {
       // Data structure for saving info about any user feedback for relevance feedback
       Feedback fdback = null;
-      if (feedback || pseudofeedback){
+      if (feedback){
         if(feedbackparams)
-          fdback = new Feedback(queryVector, retrievals, this, ALPHA, GAMMA, BETA);
+          fdback = new Feedback(queryVector, retrievals, this, ALPHA, BETA, GAMMA);
         else
           fdback = new Feedback(queryVector, retrievals, this);
-
-        if(pseudofeedback)
-          fdback.pseudoFeedback(m);
       }
 
 
@@ -468,9 +500,9 @@ public class InvertedIndex {
           currentPosition = currentPosition + MAX_RETRIEVALS;
           continue;
         }
-        if (command.equals("r") && (feedback || pseudofeedback)) {
+        if (command.equals("r") && feedback) {
           // The "redo" command re-excutes a revised query using Ide_regular
-          if (fdback.isEmpty() && !pseudofeedback) {
+          if (fdback.isEmpty()) {
             System.out.println("Need to first view some documents and provide feedback.");
             continue;
           }

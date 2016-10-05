@@ -1,3 +1,5 @@
 corpora
 ir/*/*.class
-cf-rp*
+alpha_graph*0*
+pseudo_graph*0*
+pseudo_graph15

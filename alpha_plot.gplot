@@ -10,4 +10,4 @@ set key top right
 set xrange [0:1]
 set yrange [0:1]
 
-plot 'cf-rp00' title "m=0", 'cf-rp01' title "m=1", 'cf-rp05' title "m=5", 'cf-rp10' title "m=10", 'cf-rp15' title "m=15", 'cf-rp30' title "m=30", 'cf-rp50' title "m=50", 
+plot 'alpha_graph01' title "alpha = 0.1", 'alpha_graph05' title "alpha = 0.5", 'alpha_graph10' title "alpha = 1.0"

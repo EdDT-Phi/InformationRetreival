@@ -77,6 +77,26 @@ public class Experiment {
    * @param docType   The type of documents to index (See docType in DocumentIterator).
    * @param stem      Whether tokens should be stemmed with Porter stemmer.
    */
+  public Experiment(File corpusDir, File queryFile, File outFile, short docType, boolean stem)
+      throws IOException {
+
+    this.corpusDir = corpusDir;
+    this.index = new InvertedIndex(corpusDir, docType, stem, false);
+
+    this.queryFile = queryFile;
+    this.outFile = outFile;
+  }
+
+
+  /**
+   * Create an Experiment object for generating Recall/Precision curves
+   *
+   * @param corpusDir The directory of files to index.
+   * @param queryFile The file of query/relevant-docs pairs to evaluate.
+   * @param outFile   File for output precision/recall data.
+   * @param docType   The type of documents to index (See docType in DocumentIterator).
+   * @param stem      Whether tokens should be stemmed with Porter stemmer.
+   */
   public Experiment(File corpusDir, File queryFile, File outFile, short docType, boolean stem, boolean pseudofeedback, int m, double alpha, double beta, double gamma)
       throws IOException {
 

@@ -63,6 +63,7 @@ public class Feedback {
    * Create a feedback object for this query with initial retrievals to be rated
    */
   public Feedback(HashMapVector queryVector, Retrieval[] retrievals, InvertedIndex invertedIndex, double alpha, double beta, double gamma) {
+    // System.out.println(alpha + "\n" + beta + "\n" + gamma);
     this.queryVector = queryVector;
     this.retrievals = retrievals;
     this.invertedIndex = invertedIndex;
