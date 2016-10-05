@@ -97,11 +97,16 @@ public class InvertedIndex {
    * @param stem     Whether tokens should be stemmed with Porter stemmer.
    * @param feedback Whether relevance feedback should be used.
    */
-  public InvertedIndex(File dirFile, short docType, boolean stem, boolean feedback) {
+  public InvertedIndex(File dirFile, short docType, boolean stem, boolean feedback, boolean pseudofeedback, int m, double alpha, double beta, double gamma) {
     this.dirFile = dirFile;
     this.docType = docType;
     this.stem = stem;
     this.feedback = feedback;
+    this.pseudofeedback = pseudofeedback; // pseudo relevence feedback assumed
+    this.m = m;
+    ALPHA = alpha;
+    BETA = beta;
+    GAMMA = gamma;
     tokenHash = new HashMap<String, TokenInfo>();
     docRefs = new ArrayList<DocumentReference>();
 
@@ -463,9 +468,9 @@ public class InvertedIndex {
           currentPosition = currentPosition + MAX_RETRIEVALS;
           continue;
         }
-        if (command.equals("r") && feedback) {
+        if (command.equals("r") && (feedback || pseudofeedback)) {
           // The "redo" command re-excutes a revised query using Ide_regular
-          if (fdback.isEmpty()) {
+          if (fdback.isEmpty() && !pseudofeedback) {
             System.out.println("Need to first view some documents and provide feedback.");
             continue;
           }
@@ -498,7 +503,7 @@ public class InvertedIndex {
           System.out.println("Showing document " + showNumber + " in the " + Browser.BROWSER_NAME + " window.");
           Browser.display(retrievals[showNumber - 1].docRef.file);
           // If accepting feedback and have not rated this item, then get relevance feedback
-          if (feedback && !pseudofeedback && !fdback.haveFeedback(showNumber))
+          if (feedback && !fdback.haveFeedback(showNumber))
             fdback.getFeedback(showNumber);
         } else {
           System.out.println("No such document number: " + showNumber);
@@ -557,9 +562,9 @@ public class InvertedIndex {
 
     String dirName = args[args.length - 1];
     short docType = DocumentIterator.TYPE_TEXT;
-    boolean stem = false, feedback = false, pseudofeedback = false, feedbackparams = true;
-    int m;
-    double alpha, beta, gamma;
+    boolean stem = false, feedback = false, pseudofeedback = false;
+    int m = -1;
+    double alpha = 1, beta = 1, gamma = 1;
     for (int i = 0; i < args.length - 1; i++) {
       String flag = args[i];
       if (flag.equals("-html"))
@@ -581,7 +586,6 @@ public class InvertedIndex {
           return;
         }
       } else if (flag.equals("-feedbackparams")) {
-        feedbackparams = true;
         try{
           alpha = Double.parseDouble(args[++i]);
           beta = Double.parseDouble(args[++i]);
@@ -601,7 +605,7 @@ public class InvertedIndex {
 
 
     // Create an inverted index for the files in the given directory.
-    InvertedIndex index = new InvertedIndex(new File(dirName), docType, stem, feedback);
+    InvertedIndex index = new InvertedIndex(new File(dirName), docType, stem, feedback, pseudofeedback, m, alpha, beta, gamma);
     // index.print();
 
     // Interactively process queries to this index. Moved here from constructor

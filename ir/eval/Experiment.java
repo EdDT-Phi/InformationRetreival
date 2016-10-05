@@ -77,10 +77,11 @@ public class Experiment {
    * @param docType   The type of documents to index (See docType in DocumentIterator).
    * @param stem      Whether tokens should be stemmed with Porter stemmer.
    */
-  public Experiment(File corpusDir, File queryFile, File outFile, short docType, boolean stem)
+  public Experiment(File corpusDir, File queryFile, File outFile, short docType, boolean stem, boolean pseudofeedback, int m, double alpha, double beta, double gamma)
       throws IOException {
+
     this.corpusDir = corpusDir;
-    this.index = new InvertedIndex(corpusDir, docType, stem, false);
+    this.index = new InvertedIndex(corpusDir, docType, stem, false, pseudofeedback, m, alpha, beta, gamma);
 
     this.queryFile = queryFile;
     this.outFile = outFile;
@@ -287,7 +288,7 @@ public class Experiment {
     short docType = DocumentIterator.TYPE_TEXT;
     boolean stem = false, pseudofeedback = false;
     int m = 0;
-    double alpha, beta, gamma;
+    double alpha = 1, beta = 1, gamma = 1;
     for (int i = 0; i < args.length - 3; i++) {
       String flag = args[i];
       if (flag.equals("-html"))
@@ -320,7 +321,7 @@ public class Experiment {
       }
     }
     Experiment exper = new Experiment(new File(corpusDir), new File(queryFile),
-        new File(outFile), docType, stem);
+        new File(outFile), docType, stem, pseudofeedback, m, alpha, beta, gamma);
     exper.makeRpCurve();
   }
 }

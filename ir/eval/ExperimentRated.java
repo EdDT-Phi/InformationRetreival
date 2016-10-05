@@ -43,7 +43,7 @@ public class ExperimentRated extends Experiment {
    */
   public ExperimentRated(File corpusDir, File queryFile, File outFile, short docType, boolean stem)
       throws IOException {
-      super(corpusDir, queryFile, outFile, docType, stem);
+      super(corpusDir, queryFile, outFile, docType, stem, false, -1, 1, 1, 1);
   }
 
   /**

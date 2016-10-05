@@ -1,0 +1,13 @@
+set xlabel "Recall"
+set ylabel "Precision"
+
+set terminal postscript color
+set size 0.75,0.75
+
+set style data linespoints
+set key top right
+
+set xrange [0:1]
+set yrange [0:1]
+
+plot 'cf-rp00' title "m=0", 'cf-rp01' title "m=1", 'cf-rp05' title "m=5", 'cf-rp10' title "m=10", 'cf-rp15' title "m=15", 'cf-rp30' title "m=30", 'cf-rp50' title "m=50", 

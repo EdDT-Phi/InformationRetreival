@@ -37,7 +37,7 @@ public class InvertedPhraseIndex extends InvertedIndex {
 	 * @param feedback Whether relevance feedback should be used.
 	 */
 	public InvertedPhraseIndex(File dirFile, short docType, boolean stem, boolean feedback) {
-    super(dirFile, docType, stem, feedback);
+    super(dirFile, docType, stem, feedback, false, 1, 1, 1, 1);
   }
 
   /**
