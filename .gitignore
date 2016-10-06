@@ -1,5 +1,6 @@
 corpora
 ir/*/*.class
-alpha_graph*0*
+beta_graph*0*
 pseudo_graph*0*
 pseudo_graph15
+*.gplot
