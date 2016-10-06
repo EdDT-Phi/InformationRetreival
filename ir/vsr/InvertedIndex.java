@@ -80,11 +80,6 @@ public class InvertedIndex {
   public double GAMMA = 1;
 
   /**
-   * Whether to use these params 
-   */
-  public boolean feedbackparams = false;
-
-  /**
    * Verbose flag
    */
   public static boolean verbose = false;
@@ -111,10 +106,15 @@ public class InvertedIndex {
     /**
    * Create an inverted index of the documents in a directory.
    *
-   * @param dirFile  The directory of files to index.
-   * @param docType  The type of documents to index (See docType in DocumentIterator)
-   * @param stem     Whether tokens should be stemmed with Porter stemmer.
-   * @param feedback Whether relevance feedback should be used.
+   * @param dirFile         The directory of files to index.
+   * @param docType         The type of documents to index (See docType in DocumentIterator)
+   * @param stem            Whether tokens should be stemmed with Porter stemmer.
+   * @param feedback        Whether relevance feedback should be used.
+   * @param pseudofeedback  Whether relevance pseudofeedback should be used.
+   * @param m               Number of results to mark as relevant.
+   * @param alpha           Used to pass into feedback for relevance use.
+   * @param beta            Used to pass into feedback for relevance use.
+   * @param gamma           Used to pass into feedback for relevance use.
    */
   public InvertedIndex(File dirFile, short docType, boolean stem, boolean feedback, boolean pseudofeedback, int m, double alpha, double beta, double gamma) {
     this.dirFile = dirFile;
@@ -356,22 +356,21 @@ public class InvertedIndex {
       retrievals[retrievalCount++] = getRetrieval(queryLength, docRef, score);
     }
 
-
-
     // Sort the retrievals to produce a final ranked list using the
     // Comparator for retrievals that produces a best to worst ordering.
     Arrays.sort(retrievals);
 
-
+    // Do pseudo relevance feedback
     if(retrievals.length > 0 &&  pseudofeedback){
       Feedback fdback = new Feedback(vector, retrievals, this, ALPHA, BETA, GAMMA);
       fdback.pseudoFeedback(m);
+
+      // Get new Query and get new retrievals
       vector = fdback.newQuery();
       pseudofeedback = false;
       retrievals = retrieve(vector);
       pseudofeedback = true;
     }
-
 
     return retrievals;
   }
@@ -475,13 +474,8 @@ public class InvertedIndex {
       // Data structure for saving info about any user feedback for relevance feedback
       Feedback fdback = null;
       if (feedback){
-        if(feedbackparams)
           fdback = new Feedback(queryVector, retrievals, this, ALPHA, BETA, GAMMA);
-        else
-          fdback = new Feedback(queryVector, retrievals, this);
       }
-
-
 
       // The number of the last document presented
       int currentPosition = MAX_RETRIEVALS;

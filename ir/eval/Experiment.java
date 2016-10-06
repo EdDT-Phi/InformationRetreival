@@ -87,26 +87,6 @@ public class Experiment {
     this.outFile = outFile;
   }
 
-
-  /**
-   * Create an Experiment object for generating Recall/Precision curves
-   *
-   * @param corpusDir The directory of files to index.
-   * @param queryFile The file of query/relevant-docs pairs to evaluate.
-   * @param outFile   File for output precision/recall data.
-   * @param docType   The type of documents to index (See docType in DocumentIterator).
-   * @param stem      Whether tokens should be stemmed with Porter stemmer.
-   */
-  public Experiment(File corpusDir, File queryFile, File outFile, short docType, boolean stem, boolean pseudofeedback, int m, double alpha, double beta, double gamma)
-      throws IOException {
-
-    this.corpusDir = corpusDir;
-    this.index = new InvertedIndex(corpusDir, docType, stem, false, pseudofeedback, m, alpha, beta, gamma);
-
-    this.queryFile = queryFile;
-    this.outFile = outFile;
-  }
-
   /**
    * Create an Experiment object for generating Recall/Precision curves
    * using a provided InvertedIndex
@@ -340,8 +320,8 @@ public class Experiment {
         throw new IllegalArgumentException("Unknown flag: " + flag);
       }
     }
-    Experiment exper = new Experiment(new File(corpusDir), new File(queryFile),
-        new File(outFile), docType, stem, pseudofeedback, m, alpha, beta, gamma);
+    Experiment exper = new Experiment(new InvertedIndex(new File(corpusDir), docType, stem, false, pseudofeedback, m, alpha, beta, gamma),  new File(queryFile),
+        new File(outFile));
     exper.makeRpCurve();
   }
 }
