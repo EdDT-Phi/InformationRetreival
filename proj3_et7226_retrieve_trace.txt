@@ -1,33 +1,26 @@
-Script started on Mon 14 Nov 2016 10:26:51 PM CST
-[0;36meddt[0;37m@[0;34mpeeps[0;37m [[0;33mpage_rank[0;37m:[0;32m11[0;37m] -> make t[Krun_index_trace
-make[1]: Entering directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
-make test_pridx_0
-make[2]: Entering directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
+Script started on Mon 14 Nov 2016 10:21:39 PM CST
+
 java ir.vsr.PageRankInvertedIndex -html -weight 0 indexed
 Indexing documents in indexed
 P001.html,P002.html,P003.html,P004.html,P005.html,P006.html,P007.html,P008.html,P009.html,P010.html,P011.html,P012.html,P013.html,P014.html,P015.html,P016.html,P017.html,P018.html,P019.html,P020.html,P021.html,P022.html,P023.html,P024.html,P025.html,P026.html,P027.html,P028.html,P029.html,P030.html,P031.html,P032.html,P033.html,P034.html,P035.html,P036.html,P037.html,P038.html,P039.html,P040.html,P041.html,P042.html,P043.html,P044.html,P045.html,P046.html,P047.html,P048.html,P049.html,P050.html,P051.html,P052.html,P053.html,P054.html,P055.html,P056.html,P057.html,P058.html,P059.html,P060.html,P061.html,P062.html,P063.html,P064.html,P065.html,P066.html,P067.html,P068.html,P069.html,P070.html,P071.html,P072.html,P073.html,P074.html,P075.html,P076.html,P077.html,P078.html,P079.html,P080.html,P081.html,P082.html,P083.html,P084.html,P085.html,P086.html,P087.html,P088.html,P089.html,P090.html,P091.html,P092.html,P093.html,P094.html,P095.html,P096.html,P097.html,P098.html,P099.html,P100.html,P101.html,P102.html,P103.html,P104.html,P105.html,P106.html,P107.html,P108.html,P109.html,P110.html,P111.html,P112.html,P113.html,P114.html,P115.html,P116.html,P117.html,P118.html,P119.html,P120.html,P121.html,P122.html,P123.html,P124.html,P125.html,P126.html,P127.html,P128.html,P129.html,P130.html,P131.html,P132.html,P133.html,P134.html,P135.html,P136.html,P137.html,P138.html,P139.html,P140.html,P141.html,P142.html,P143.html,P144.html,P145.html,P146.html,P147.html,P148.html,P149.html,P150.html,P151.html,P152.html,P153.html,P154.html,P155.html,P156.html,P157.html,P158.html,P159.html,P160.html,P161.html,P162.html,P163.html,P164.html,P165.html,P166.html,P167.html,P168.html,P169.html,P170.html,P171.html,P172.html,P173.html,P174.html,P175.html,P176.html,P177.html,P178.html,P179.html,P180.html,P181.html,P182.html,P183.html,P184.html,P185.html,P186.html,P187.html,P188.html,P189.html,P190.html,P191.html,P192.html,P193.html,P194.html,P195.html,P196.html,P197.html,P198.html,P199.html,P200.html,
 Indexed 200 documents with 6129 unique terms.
 Now able to process queries. When done, enter an empty query to exit.
 
-Enter query:  algot rithms
+Enter query:  algorithms
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P153.html            Score: 0.58687
+1.  P153.html            Score: 0.58676
 2.  P136.html            Score: 0.21137
-3.  P057.html            Score: 0.17953
-4.  P104.html            Score: 0.17953
-5.  P015.html            Score: 0.14312
-6.  P090.html            Score: 0.14312
-7.  P143.html            Score: 0.14312
-8.  P006.html            Score: 0.13994
-9.  P062.html            Score: 0.12937
-10. P007.html            Score: 0.121
+3.  P104.html            Score: 0.1795
+4.  P057.html            Score: 0.1795
+5.  P090.html            Score: 0.14309
+6.  P143.html            Score: 0.14309
+7.  P015.html            Score: 0.14309
+8.  P006.html            Score: 0.13992
+9.  P062.html            Score: 0.12934
+10. P142.html            Score: 0.12097
 
-Enter `m' to see more, a number to show the nth document, nothing to exit.
-
- Enter command:  software engineering
-Unknown command.
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
  Enter command:  
@@ -36,16 +29,16 @@ Enter query:  software engineering
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P027.html            Score: 0.26212
-2.  P148.html            Score: 0.26212
-3.  P046.html            Score: 0.25742
-4.  P060.html            Score: 0.25135
-5.  P005.html            Score: 0.24794
-6.  P049.html            Score: 0.23663
-7.  P022.html            Score: 0.23182
-8.  P020.html            Score: 0.21615
-9.  P033.html            Score: 0.21375
-10. P067.html            Score: 0.20747
+1.  P027.html            Score: 0.26211
+2.  P148.html            Score: 0.26211
+3.  P046.html            Score: 0.2574
+4.  P060.html            Score: 0.25133
+5.  P005.html            Score: 0.24793
+6.  P049.html            Score: 0.23661
+7.  P022.html            Score: 0.2318
+8.  P020.html            Score: 0.21613
+9.  P033.html            Score: 0.21374
+10. P067.html            Score: 0.20746
 
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
@@ -55,25 +48,23 @@ Enter query:  web
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P069.html            Score: 0.15897
-2.  P076.html            Score: 0.15896
+1.  P076.html            Score: 0.15895
+2.  P069.html            Score: 0.15895
 3.  P127.html            Score: 0.12292
-4.  P020.html            Score: 0.11237
-5.  P050.html            Score: 0.10887
-6.  P028.html            Score: 0.09296
-7.  P102.html            Score: 0.09295
-8.  P172.html            Score: 0.08762
-9.  P057.html            Score: 0.08103
-10. P104.html            Score: 0.08101
+4.  P020.html            Score: 0.11232
+5.  P050.html            Score: 0.10882
+6.  P102.html            Score: 0.09286
+7.  P028.html            Score: 0.09286
+8.  P172.html            Score: 0.08761
+9.  P057.html            Score: 0.08094
+10. P104.html            Score: 0.08094
 
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
  Enter command:  
 
-Enter query:  
-make[2]: Leaving directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
-make test_pridx_3
-make[2]: Entering directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
+Enter query: 
+
 java ir.vsr.PageRankInvertedIndex -html -weight 3 indexed
 Indexing documents in indexed
 P001.html,P002.html,P003.html,P004.html,P005.html,P006.html,P007.html,P008.html,P009.html,P010.html,P011.html,P012.html,P013.html,P014.html,P015.html,P016.html,P017.html,P018.html,P019.html,P020.html,P021.html,P022.html,P023.html,P024.html,P025.html,P026.html,P027.html,P028.html,P029.html,P030.html,P031.html,P032.html,P033.html,P034.html,P035.html,P036.html,P037.html,P038.html,P039.html,P040.html,P041.html,P042.html,P043.html,P044.html,P045.html,P046.html,P047.html,P048.html,P049.html,P050.html,P051.html,P052.html,P053.html,P054.html,P055.html,P056.html,P057.html,P058.html,P059.html,P060.html,P061.html,P062.html,P063.html,P064.html,P065.html,P066.html,P067.html,P068.html,P069.html,P070.html,P071.html,P072.html,P073.html,P074.html,P075.html,P076.html,P077.html,P078.html,P079.html,P080.html,P081.html,P082.html,P083.html,P084.html,P085.html,P086.html,P087.html,P088.html,P089.html,P090.html,P091.html,P092.html,P093.html,P094.html,P095.html,P096.html,P097.html,P098.html,P099.html,P100.html,P101.html,P102.html,P103.html,P104.html,P105.html,P106.html,P107.html,P108.html,P109.html,P110.html,P111.html,P112.html,P113.html,P114.html,P115.html,P116.html,P117.html,P118.html,P119.html,P120.html,P121.html,P122.html,P123.html,P124.html,P125.html,P126.html,P127.html,P128.html,P129.html,P130.html,P131.html,P132.html,P133.html,P134.html,P135.html,P136.html,P137.html,P138.html,P139.html,P140.html,P141.html,P142.html,P143.html,P144.html,P145.html,P146.html,P147.html,P148.html,P149.html,P150.html,P151.html,P152.html,P153.html,P154.html,P155.html,P156.html,P157.html,P158.html,P159.html,P160.html,P161.html,P162.html,P163.html,P164.html,P165.html,P166.html,P167.html,P168.html,P169.html,P170.html,P171.html,P172.html,P173.html,P174.html,P175.html,P176.html,P177.html,P178.html,P179.html,P180.html,P181.html,P182.html,P183.html,P184.html,P185.html,P186.html,P187.html,P188.html,P189.html,P190.html,P191.html,P192.html,P193.html,P194.html,P195.html,P196.html,P197.html,P198.html,P199.html,P200.html,
@@ -84,35 +75,35 @@ Enter query:  algorithms
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P153.html            Score: 0.58687
-2.  P136.html            Score: 0.21137
-3.  P057.html            Score: 0.17953
-4.  P104.html            Score: 0.17953
-5.  P015.html            Score: 0.14312
-6.  P090.html            Score: 0.14312
-7.  P143.html            Score: 0.14312
-8.  P006.html            Score: 0.13994
-9.  P062.html            Score: 0.12937
-10. P007.html            Score: 0.121
+1.  P153.html            Score: 0.58709
+2.  P136.html            Score: 0.21138
+3.  P057.html            Score: 0.17961
+4.  P104.html            Score: 0.17959
+5.  P015.html            Score: 0.14318
+6.  P090.html            Score: 0.14317
+7.  P143.html            Score: 0.14317
+8.  P006.html            Score: 0.14
+9.  P062.html            Score: 0.12941
+10. P007.html            Score: 0.12105
 
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
  Enter command:  
 
-Enter query:  softwarte  e engineering
+Enter query:  software engineering
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P027.html            Score: 0.26212
-2.  P148.html            Score: 0.26212
-3.  P046.html            Score: 0.25742
-4.  P060.html            Score: 0.25135
-5.  P005.html            Score: 0.24794
-6.  P049.html            Score: 0.23663
-7.  P022.html            Score: 0.23182
-8.  P020.html            Score: 0.21615
-9.  P033.html            Score: 0.21375
-10. P067.html            Score: 0.20747
+1.  P027.html            Score: 0.26216
+2.  P148.html            Score: 0.26215
+3.  P046.html            Score: 0.25744
+4.  P060.html            Score: 0.25138
+5.  P005.html            Score: 0.24797
+6.  P049.html            Score: 0.23666
+7.  P022.html            Score: 0.23184
+8.  P020.html            Score: 0.21617
+9.  P033.html            Score: 0.21378
+10. P067.html            Score: 0.2075
 
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
@@ -122,25 +113,24 @@ Enter query:  web
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P069.html            Score: 0.15897
-2.  P076.html            Score: 0.15896
-3.  P127.html            Score: 0.12292
-4.  P020.html            Score: 0.11237
-5.  P050.html            Score: 0.10887
-6.  P028.html            Score: 0.09296
-7.  P102.html            Score: 0.09295
-8.  P172.html            Score: 0.08762
-9.  P057.html            Score: 0.08103
-10. P104.html            Score: 0.08101
+1.  P069.html            Score: 0.15902
+2.  P076.html            Score: 0.15897
+3.  P127.html            Score: 0.12293
+4.  P020.html            Score: 0.11247
+5.  P050.html            Score: 0.10897
+6.  P028.html            Score: 0.09316
+7.  P102.html            Score: 0.09314
+8.  P172.html            Score: 0.08763
+9.  P057.html            Score: 0.08121
+10. P104.html            Score: 0.08115
 
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
  Enter command:  
 
 Enter query:  
-make[2]: Leaving directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
-make test_pridx_10
-make[2]: Entering directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
+
+
 java ir.vsr.PageRankInvertedIndex -html -weight 10 indexed
 Indexing documents in indexed
 P001.html,P002.html,P003.html,P004.html,P005.html,P006.html,P007.html,P008.html,P009.html,P010.html,P011.html,P012.html,P013.html,P014.html,P015.html,P016.html,P017.html,P018.html,P019.html,P020.html,P021.html,P022.html,P023.html,P024.html,P025.html,P026.html,P027.html,P028.html,P029.html,P030.html,P031.html,P032.html,P033.html,P034.html,P035.html,P036.html,P037.html,P038.html,P039.html,P040.html,P041.html,P042.html,P043.html,P044.html,P045.html,P046.html,P047.html,P048.html,P049.html,P050.html,P051.html,P052.html,P053.html,P054.html,P055.html,P056.html,P057.html,P058.html,P059.html,P060.html,P061.html,P062.html,P063.html,P064.html,P065.html,P066.html,P067.html,P068.html,P069.html,P070.html,P071.html,P072.html,P073.html,P074.html,P075.html,P076.html,P077.html,P078.html,P079.html,P080.html,P081.html,P082.html,P083.html,P084.html,P085.html,P086.html,P087.html,P088.html,P089.html,P090.html,P091.html,P092.html,P093.html,P094.html,P095.html,P096.html,P097.html,P098.html,P099.html,P100.html,P101.html,P102.html,P103.html,P104.html,P105.html,P106.html,P107.html,P108.html,P109.html,P110.html,P111.html,P112.html,P113.html,P114.html,P115.html,P116.html,P117.html,P118.html,P119.html,P120.html,P121.html,P122.html,P123.html,P124.html,P125.html,P126.html,P127.html,P128.html,P129.html,P130.html,P131.html,P132.html,P133.html,P134.html,P135.html,P136.html,P137.html,P138.html,P139.html,P140.html,P141.html,P142.html,P143.html,P144.html,P145.html,P146.html,P147.html,P148.html,P149.html,P150.html,P151.html,P152.html,P153.html,P154.html,P155.html,P156.html,P157.html,P158.html,P159.html,P160.html,P161.html,P162.html,P163.html,P164.html,P165.html,P166.html,P167.html,P168.html,P169.html,P170.html,P171.html,P172.html,P173.html,P174.html,P175.html,P176.html,P177.html,P178.html,P179.html,P180.html,P181.html,P182.html,P183.html,P184.html,P185.html,P186.html,P187.html,P188.html,P189.html,P190.html,P191.html,P192.html,P193.html,P194.html,P195.html,P196.html,P197.html,P198.html,P199.html,P200.html,
@@ -151,39 +141,35 @@ Enter query:  algorithms
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P153.html            Score: 0.58687
-2.  P136.html            Score: 0.21137
-3.  P057.html            Score: 0.17953
-4.  P104.html            Score: 0.17953
-5.  P015.html            Score: 0.14312
-6.  P090.html            Score: 0.14312
-7.  P143.html            Score: 0.14312
-8.  P006.html            Score: 0.13994
-9.  P062.html            Score: 0.12937
-10. P007.html            Score: 0.121
+1.  P153.html            Score: 0.58787
+2.  P136.html            Score: 0.2114
+3.  P057.html            Score: 0.17989
+4.  P104.html            Score: 0.17981
+5.  P015.html            Score: 0.14339
+6.  P090.html            Score: 0.14335
+7.  P143.html            Score: 0.14334
+8.  P006.html            Score: 0.14018
+9.  P062.html            Score: 0.12957
+10. P007.html            Score: 0.12125
 
-Enter `m' to see more, a number to show the nth document, nothing to exit.
-
- Enter command:  software engineering
-Unknown command.
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
  Enter command:  
 
-Enter query:  software ei ngineering
+Enter query:  software engineering
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P027.html            Score: 0.26212
-2.  P148.html            Score: 0.26212
-3.  P046.html            Score: 0.25742
-4.  P060.html            Score: 0.25135
-5.  P005.html            Score: 0.24794
-6.  P049.html            Score: 0.23663
-7.  P022.html            Score: 0.23182
-8.  P020.html            Score: 0.21615
-9.  P033.html            Score: 0.21375
-10. P067.html            Score: 0.20747
+1.  P027.html            Score: 0.26228
+2.  P148.html            Score: 0.26225
+3.  P046.html            Score: 0.25754
+4.  P060.html            Score: 0.25149
+5.  P005.html            Score: 0.24808
+6.  P049.html            Score: 0.23677
+7.  P022.html            Score: 0.23193
+8.  P020.html            Score: 0.21627
+9.  P033.html            Score: 0.21387
+10. P067.html            Score: 0.2076
 
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
@@ -193,24 +179,21 @@ Enter query:  web
 
 Top 10 matching Documents from most to least relevant:
 
-1.  P069.html            Score: 0.15897
-2.  P076.html            Score: 0.15896
-3.  P127.html            Score: 0.12292
-4.  P020.html            Score: 0.11237
-5.  P050.html            Score: 0.10887
-6.  P028.html            Score: 0.09296
-7.  P102.html            Score: 0.09295
-8.  P172.html            Score: 0.08762
-9.  P057.html            Score: 0.08103
-10. P104.html            Score: 0.08101
+1.  P069.html            Score: 0.15918
+2.  P076.html            Score: 0.15903
+3.  P127.html            Score: 0.12296
+4.  P020.html            Score: 0.11283
+5.  P050.html            Score: 0.10932
+6.  P028.html            Score: 0.09386
+7.  P102.html            Score: 0.09377
+8.  P172.html            Score: 0.08767
+9.  P057.html            Score: 0.08182
+10. P104.html            Score: 0.08164
 
 Enter `m' to see more, a number to show the nth document, nothing to exit.
 
  Enter command:  
 
 Enter query:  
-make[2]: Leaving directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
-make[1]: Leaving directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
-[0;36meddt[0;37m@[0;34mpeeps[0;37m [[0;33mpage_rank[0;37m:[0;32m11[0;37m] -> exit
 
-Script done on Mon 14 Nov 2016 10:28:00 PM CST
+Script done on Mon 14 Nov 2016 11:23:07 PM CST

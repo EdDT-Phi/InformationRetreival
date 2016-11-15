@@ -17,18 +17,24 @@ class PageRankInvertedIndex extends InvertedIndex{
 	* @param dirFile  The directory of files to index.
 	* @param docType  The type of documents to index (See docType in DocumentIterator)
 	* @param stem     Whether tokens should be stemmed with Porter stemmer.
-	* @param feedback Whether relevance feedback should be used.
+  * @param feedback Whether relevance feedback should be used.
+	* @param weights Whether relevance feedback should be used.
 	*/
 	public PageRankInvertedIndex(File dirFile, short docType, boolean stem, boolean feedback, double weight) {
 		super(dirFile, docType, stem, feedback);
-		readWeights();
+		readWeights(weight);
 	}
 
-	public void readWeights() {
+
+  /**
+   * Reads weights into the hashmap from file 'page_ranks.txt'
+   * Assumes page exists and has correct format
+   */
+	public void readWeights(double weight) {
 		try(Scanner sc = new Scanner(new File("page_ranks.txt"))) {
 			weights = new HashMap<String, Double>();
 			while(sc.hasNext()) {
-				weights.put(sc.next(), Double.parseDouble(sc.next()));
+				weights.put(sc.next(), Double.parseDouble(sc.next()) * weight);
 			}
 		} catch (Exception e) {
 			System.out.println("An error occured: " + e.toString());
@@ -37,6 +43,7 @@ class PageRankInvertedIndex extends InvertedIndex{
 
 	/**
 	 * Perform ranked retrieval on this input query Document vector.
+   * Modified to add page rank value.
 	 */
 	public Retrieval[] retrieve(HashMapVector vector) {
 		// Create a hashtable to store the retrieved documents.  Keys

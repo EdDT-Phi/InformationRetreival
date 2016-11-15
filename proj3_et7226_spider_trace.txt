@@ -1,15 +1,4 @@
 Script started on Mon 14 Nov 2016 10:21:39 PM CST
-[0;36meddt[0;37m@[0;34mpeeps[0;37m [[0;33mpage_rank[0;37m:[0;32m10[0;37m] -> make site_spider
-make[1]: Entering directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
-make[1]: *** No rule to make target `site_spider'.  Stop.
-make[1]: Leaving directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
-[0;36meddt[0;37m@[0;34mpeeps[0;37m [[0;33mpage_rank[0;37m:[0;32m10[0;37m] -> pwd
-/v/filer4b/v38q001/eddt/Documents/InformationRetreival
-[0;36meddt[0;37m@[0;34mpeeps[0;37m [[0;33mpage_rank[0;37m:[0;32m10[0;37m] -> ls
-[0m[01;34m.[0m   [01;34m.git[0m        [01;34mindexed[0m  makefile        [01;34mproj1[0m  proj3_et7226_spider_trace.txt
-[01;34m..[0m  .gitignore  [01;34mir[0m       page_ranks.txt  [01;34mproj2[0m  README.txt
-[0;36meddt[0;37m@[0;34mpeeps[0;37m [[0;33mpage_rank[0;37m:[0;32m10[0;37m] -> lspwdmake site_spider[Ctsite_spideresite_spider[Csite_spidertsite_spider_site_spider
-make[1]: Entering directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
 java ir.webutils.PageRankSiteSpider -c 200 -d indexed -u http://www.cs.utexas.edu/users/mooney/ir-course/students.html
 Trying: http://www.cs.utexas.edu/users/mooney/ir-course/students.html
 Indexing(1): http://www.cs.utexas.edu/users/mooney/ir-course/students.html
@@ -2088,7 +2077,5 @@ http://www.cs.utexas.edu/users/novak/cs375vocab.html: 4.040601030012127E-4
 http://www.cs.utexas.edu/users/novak/cs375/: 3.8725725663367173E-4
 http://www.cs.utexas.edu/users/novak/cs375files.html: 3.8129823098890495E-4
 http://www.cs.utexas.edu/users/novak/debugging.html: 3.8928066941964703E-4
-make[1]: Leaving directory `/v/filer4b/v38q001/eddt/Documents/InformationRetreival'
-[0;36meddt[0;37m@[0;34mpeeps[0;37m [[0;33mpage_rank[0;37m:[0;32m10[0;37m] -> exit
 
 Script done on Mon 14 Nov 2016 10:23:51 PM CST
