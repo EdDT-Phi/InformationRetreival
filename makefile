@@ -36,3 +36,5 @@ test_beta:
 	gv proj2_et7226_beta_results.ps
 test_params:
 	java ir.eval.Experiment -pseudofeedback 5 -feedbackparams 0.1 0.2 0.3 /u/mooney/ir-code/corpora/cf/ /u/mooney/ir-code/queries/cf/queries cf-rp
+test_base:
+	 java ir.webutils.PageRankSpider -u some_page
