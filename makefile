@@ -2,10 +2,11 @@ default:
 	javac ir/*/*.java
 clean:
 	rm ir/*/*.class
+	rm P*.html
 turnin: default
-	rm -f proj2_et7226_code.zip
-	zip proj2_et7226_code.zip ir/vsr/InvertedIndex.* ir/vsr/Feedback.* ir/eval/Experiment.class ir/eval/Experiment.java
-	unzip -l proj2_et7226_code.zip
+	rm -f proj3_et7226_code.zip
+	zip proj3_et7226_code.zip ir/*/PageRank*
+	unzip -l proj3_et7226_code.zip
 test_bigrams:
 	java ir.vsr.InvertedIndex -html -v /u/mooney/ir-code/corpora/cs-faculty/
 test_fb:
@@ -37,4 +38,22 @@ test_beta:
 test_params:
 	java ir.eval.Experiment -pseudofeedback 5 -feedbackparams 0.1 0.2 0.3 /u/mooney/ir-code/corpora/cf/ /u/mooney/ir-code/queries/cf/queries cf-rp
 test_base:
-	 java ir.webutils.PageRankSpider -u some_page
+	 java ir.webutils.PageRankSpider -d indexed -u http://www.cs.utexas.edu/users/mooney/ir-course/students.html 
+	 cat page_ranks.txt
+test_site_spider:
+	 java ir.webutils.PageRankSiteSpider -c 200 -d indexed -u http://www.cs.utexas.edu/users/mooney/ir-course/students.html
+test_pridx_0:
+	java ir.vsr.PageRankInvertedIndex -html -weight 0 indexed
+test_pridx_3:
+	java ir.vsr.PageRankInvertedIndex -html -weight 3 indexed
+test_pridx_10:
+	java ir.vsr.PageRankInvertedIndex -html -weight 10 indexed
+spider_trace:
+	 script proj3_et7226_spider_trace.txt
+	 make test_site_spider
+index_trace:
+	 script proj3_et7226_retrieve_trace.txt
+run_index_trace:
+	 make test_pridx_0
+	 make test_pridx_3
+	 make test_pridx_10

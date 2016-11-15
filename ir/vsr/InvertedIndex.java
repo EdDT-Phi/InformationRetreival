@@ -55,36 +55,6 @@ public class InvertedIndex {
   public boolean feedback = false;
 
   /**
-   * Whether pseudo relevance feedback is used
-   */
-  public boolean pseudofeedback = false;
-
-  /**
-   * Value m for pseudofeedback
-   */
-  public int m = 0;
-
-  /**
-   * A Rochio/Ide algorithm parameter
-   */
-  public double ALPHA = 1;
-
-  /**
-   * A Rochio/Ide algorithm parameter
-   */
-  public double BETA = 1;
-
-  /**
-   * A Rochio/Ide algorithm parameter
-   */
-  public double GAMMA = 1;
-
-  /**
-   * Verbose flag
-   */
-  public static boolean verbose = false;
-
-  /**
    * Create an inverted index of the documents in a directory.
    *
    * @param dirFile  The directory of files to index.
@@ -99,36 +69,6 @@ public class InvertedIndex {
     this.feedback = feedback;
     tokenHash = new HashMap<String, TokenInfo>();
     docRefs = new ArrayList<DocumentReference>();
-
-    indexDocuments();
-  }
-
-    /**
-   * Create an inverted index of the documents in a directory.
-   *
-   * @param dirFile         The directory of files to index.
-   * @param docType         The type of documents to index (See docType in DocumentIterator)
-   * @param stem            Whether tokens should be stemmed with Porter stemmer.
-   * @param feedback        Whether relevance feedback should be used.
-   * @param pseudofeedback  Whether relevance pseudofeedback should be used.
-   * @param m               Number of results to mark as relevant.
-   * @param alpha           Used to pass into feedback for relevance use.
-   * @param beta            Used to pass into feedback for relevance use.
-   * @param gamma           Used to pass into feedback for relevance use.
-   */
-  public InvertedIndex(File dirFile, short docType, boolean stem, boolean feedback, boolean pseudofeedback, int m, double alpha, double beta, double gamma) {
-    this.dirFile = dirFile;
-    this.docType = docType;
-    this.stem = stem;
-    this.feedback = feedback;
-    this.pseudofeedback = pseudofeedback; // pseudo relevence feedback assumed
-    this.m = m;
-    ALPHA = alpha;
-    BETA = beta;
-    GAMMA = gamma;
-    tokenHash = new HashMap<String, TokenInfo>();
-    docRefs = new ArrayList<DocumentReference>();
-
     indexDocuments();
   }
 
@@ -162,7 +102,7 @@ public class InvertedIndex {
       FileDocument doc = docIter.nextDocument();
       // Create a document vector for this document
       System.out.print(doc.file.getName() + ",");
-      HashMapVector vector = getHashMapVector(doc);
+      HashMapVector vector = doc.hashMapVector();
       indexDocument(doc, vector);
     }
     // Now that all documents have been processed, we can calculate the IDF weights for
@@ -316,7 +256,7 @@ public class InvertedIndex {
    * Perform ranked retrieval on this input query Document.
    */
   public Retrieval[] retrieve(Document doc) {
-    return retrieve(getHashMapVector(doc));
+    return retrieve(doc.hashMapVector());
   }
 
   /**
@@ -355,23 +295,9 @@ public class InvertedIndex {
       double score = entry.getValue().value;
       retrievals[retrievalCount++] = getRetrieval(queryLength, docRef, score);
     }
-
     // Sort the retrievals to produce a final ranked list using the
     // Comparator for retrievals that produces a best to worst ordering.
     Arrays.sort(retrievals);
-
-    // Do pseudo relevance feedback
-    if(retrievals.length > 0 &&  pseudofeedback){
-      Feedback fdback = new Feedback(vector, retrievals, this, ALPHA, BETA, GAMMA);
-      fdback.pseudoFeedback(m);
-
-      // Get new Query and get new retrievals
-      vector = fdback.newQuery();
-      pseudofeedback = false;
-      retrievals = retrieve(vector);
-      pseudofeedback = true;
-    }
-
     return retrievals;
   }
 
@@ -447,21 +373,11 @@ public class InvertedIndex {
       if (query.equals(""))
         break;
       // Get the ranked retrievals for this query string and present them
-      HashMapVector queryVector = getHashMapVector(new TextStringDocument(query, stem));
+      HashMapVector queryVector = (new TextStringDocument(query, stem)).hashMapVector();
       Retrieval[] retrievals = retrieve(queryVector);
-
       presentRetrievals(queryVector, retrievals);
     }
     while (true);
-  }
-
-  /**
-   * Added this function to have a single function to override
-   * modified all functions to use this insted of calling it themselves
-   */
-
-  public HashMapVector getHashMapVector(Document doc) {
-    return doc.hashMapVector();
   }
 
   /**
@@ -473,10 +389,8 @@ public class InvertedIndex {
     if (showRetrievals(retrievals)) {
       // Data structure for saving info about any user feedback for relevance feedback
       Feedback fdback = null;
-      if (feedback){
-          fdback = new Feedback(queryVector, retrievals, this, ALPHA, BETA, GAMMA);
-      }
-
+      if (feedback)
+        fdback = new Feedback(queryVector, retrievals, this);
       // The number of the last document presented
       int currentPosition = MAX_RETRIEVALS;
       // The number of a document to be displayed.  This is one one greater than the array index
@@ -588,9 +502,7 @@ public class InvertedIndex {
 
     String dirName = args[args.length - 1];
     short docType = DocumentIterator.TYPE_TEXT;
-    boolean stem = false, feedback = false, pseudofeedback = false;
-    int m = -1;
-    double alpha = 1, beta = 1, gamma = 1;
+    boolean stem = false, feedback = false;
     for (int i = 0; i < args.length - 1; i++) {
       String flag = args[i];
       if (flag.equals("-html"))
@@ -602,28 +514,6 @@ public class InvertedIndex {
       else if (flag.equals("-feedback"))
         // Use relevance feedback
         feedback = true;
-      else if (flag.equals("-pseudofeedback")) {
-        // Use pseudo relevance feedback
-        pseudofeedback = true;
-        try{
-          m = Integer.parseInt(args[++i]);
-        } catch(Exception e) {
-          terminal("-pseudofeedback must be followed by an int");
-          return;
-        }
-      } else if (flag.equals("-feedbackparams")) {
-        try{
-          alpha = Double.parseDouble(args[++i]);
-          beta = Double.parseDouble(args[++i]);
-          gamma = Double.parseDouble(args[++i]);
-        } catch(Exception e) {
-          terminal("-feedbackparams must be followed by three floating point values");
-          return;
-        }
-      }
-      else if (flag.equals("-v"))
-        // Verbose flag
-        verbose = true;
       else {
         throw new IllegalArgumentException("Unknown flag: "+ flag);
       }
@@ -631,40 +521,13 @@ public class InvertedIndex {
 
 
     // Create an inverted index for the files in the given directory.
-    InvertedIndex index = new InvertedIndex(new File(dirName), docType, stem, feedback, pseudofeedback, m, alpha, beta, gamma);
+    InvertedIndex index = new InvertedIndex(new File(dirName), docType, stem, feedback);
     // index.print();
-
-    // Interactively process queries to this index. Moved here from constructor
+    // Interactively process queries to this index.
     index.processQueries();
   }
 
-  /**
-   * Used as a smaller version of System.out.println, keeping in mind verbose
-   * @param s   The string to print
-   */
-  public static void console(String s){
-    console(s, false, '\n');
-  }
 
-  /**
-   * Used as a smaller version of System.out.println, ignoring verbose
-   * @param s   The string to print
-   */
-  public static void terminal(String s) {
-    console(s, true, '\n');
-  }
-
-  /**
-   * Used as a smaller version of System.out.println
-   * @param s       The string to print
-   * @param force   Should we ignore verbose?
-   * @param delim   This can be changed to print without adding a new line
-   */
-  public static void console(String s, boolean force, char delim) {
-    if(verbose || force) {
-      System.out.print(s + delim);
-    }
-  }
 }
 
    

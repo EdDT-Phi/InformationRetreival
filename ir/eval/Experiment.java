@@ -320,9 +320,9 @@ public class Experiment {
         throw new IllegalArgumentException("Unknown flag: " + flag);
       }
     }
-    Experiment exper = new Experiment(new InvertedIndex(new File(corpusDir), docType, stem, false, pseudofeedback, m, alpha, beta, gamma),  new File(queryFile),
-        new File(outFile));
-    exper.makeRpCurve();
+    // Experiment exper = new Experiment(new InvertedIndex(new File(corpusDir), docType, stem, false, pseudofeedback, m, alpha, beta, gamma),  new File(queryFile),
+    //     new File(outFile));
+    // exper.makeRpCurve();
   }
 }
 
