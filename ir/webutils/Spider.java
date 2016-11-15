@@ -73,7 +73,7 @@ public class Spider {
    * <ul>
    * <li>-safe : Check for and obey robots.txt and robots META tag
    * directives.</li>
-   * <li>-d &lt;directory&gt; : Store indexed files in &lt;directory&gt.</li>
+   * <li>-d &lt;directory&gt; : Store indexed files in &lt;directory&gt;.</li>
    * <li>-c &lt;count&gt; : Store at most &lt;count&gt; files.</li>
    * <li>-u &lt;url&gt; : Start at &lt;url&gt;.</li>
    * <li>-slow : Pause briefly before getting a page.  This can be
