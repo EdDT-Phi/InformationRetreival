@@ -11,17 +11,17 @@ import ir.utilities.*;
  * internally as logs to prevent underflow problems.
  *
  */
-public class KNN extends Classifier {
-
+public class Rocchio extends Classifier {
 
   InvertedIndex invIndx;
-  HashMap<File, Integer> training_examples;
-  int k = 5;
+  HashMapVector[] vectors;
+  boolean neg = false;
+
 
   /**
    * Name of classifier
    */
-  public static final String name = "KNN";
+  public static final String name = "Rocchio";
 
   /**
    * Number of categories
@@ -44,7 +44,7 @@ public class KNN extends Classifier {
    * @param categories The array of Strings containing the category names
    * @param debug      Flag to turn on detailed output
    */
-  public KNN(String[] categories, boolean debug) {
+  public Rocchio(String[] categories, boolean debug) {
     this.categories = categories;
     this.debug = debug;
     numCategories = categories.length;
@@ -57,10 +57,10 @@ public class KNN extends Classifier {
    * @param categories The array of Strings containing the category names
    * @param debug      Flag to turn on detailed output
    */
-  public KNN(String[] categories, int k, boolean debug) {
+  public Rocchio(String[] categories, boolean neg, boolean debug) {
     this.categories = categories;
     this.debug = debug;
-    this.k = k;
+    this.neg = neg;
     numCategories = categories.length;
   }
 
@@ -75,15 +75,7 @@ public class KNN extends Classifier {
    * Returns the name
    */
   public String getName() {
-    return name + "_K" + k;
-  }
-
-
-  /**
-   * Returns training result
-   */
-  public InvertedIndex getTrainResult() {
-    return invIndx;
+    return name + (neg ? "_neg" : "");
   }
 
   /**
@@ -93,13 +85,16 @@ public class KNN extends Classifier {
    * @param trainExamples The vector of training examples
    */
   public void train(List<Example> trainExamples) {
-    training_examples = new HashMap<File, Integer>();
 
-    for(Example ex: trainExamples) {
-      training_examples.put(ex.document.file, ex.getCategory());
-    }
-
+    vectors = new HashMapVector[numCategories];
     invIndx = new InvertedIndex(trainExamples);
+    for(int i = 0; i < numCategories; i++) {
+      vectors[i] = new HashMapVector();
+    }
+    for(Example ex: trainExamples){
+      // Scale vector by max weight, using idf's from inverted index
+      vectors[ex.getCategory()].addScaled(ex.hashVector, 1/ex.hashVector.maxWeight(), invIndx);
+    }
   }
 
   /**
@@ -110,19 +105,24 @@ public class KNN extends Classifier {
    */
   public boolean test(Example testExample) {
     Retrieval[] results = invIndx.retrieve(testExample.hashVector);
-    
-    double[] counts = new double[numCategories];
-    for(int i = 0; i < k && i < results.length; i++) {
-      counts[training_examples.get(results[i].docRef.file)] += 1;
+
+    if(results.length == 0) {
+      if(debug) System.out.println("No docs found");
+      return false;
+    }
+
+    double[] cos_sim = new double[numCategories];
+    for(int i = 0; i < numCategories; i++) {
+      cos_sim[i] = testExample.hashVector.cosineTo(vectors[i]);
     }
 
     if(debug) {
       for(int i = 0; i < numCategories; i++) {
-        System.out.println("\t" + categories[i] +": " + counts[i]);
+        System.out.println("\t" + categories[i] +": " + cos_sim[i]);
       }
     }
 
-    int predictedClass = argMax(counts);
+    int predictedClass = argMax(cos_sim);
     if (debug) {
       System.out.print("Document: " + testExample.name + "\nResults: ");
       System.out.println("\nCorrect class: " + testExample.getCategory() + ", Predicted class: " + predictedClass + "\n");

@@ -109,6 +109,20 @@ public class HashMapVector {
   }
 
   /**
+   * Destructively add a scaled version of the given vector to the current vector
+   * This version uses an inverted index to compute idf's
+   */
+  public void addScaled(HashMapVector vector, double scalingFactor, InvertedIndex invIndx) {
+    for (Map.Entry<String, Weight> entry : vector.entrySet()) {
+      // An entry in the HashMap maps a token to a Weight
+      String token = entry.getKey();
+      // The weight for the token is in the value of the Weight
+      double weight = entry.getValue().getValue() * invIndx.tokenHash.get(token).idf;
+      increment(token, scalingFactor * weight);
+    }
+  }
+
+  /**
    * Destructively subtract the given vector from the current vector
    */
   public void subtract(HashMapVector vector) {
@@ -235,9 +249,6 @@ public class HashMapVector {
     return Math.sqrt(sum);
   }
 
+
+
 }
-
-
-
-
-
