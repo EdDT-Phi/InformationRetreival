@@ -21,8 +21,6 @@ rocchio:
 index_trace:
 	 script proj3_et7226_retrieve_trace.txt
 plot:
-	gnuplot All.gplot > plot.ps
-	gv plot.ps
+	gnuplot All.gplot | ps2pdf - eval.pdf
 plot_train:
-	gnuplot AllTrain.gplot > plot.ps
-	gv plot.ps
+	gnuplot AllTrain.gplot | ps2pdf - train.pdf
