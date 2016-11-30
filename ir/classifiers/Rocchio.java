@@ -117,13 +117,6 @@ public class Rocchio extends Classifier {
    * @param testExample The test example to be categorized
    */
   public boolean test(Example testExample) {
-    Retrieval[] results = invIndx.retrieve(testExample.hashVector);
-
-    if(results.length == 0) {
-      if(debug) System.out.println("No docs found");
-      return false;
-    }
-
     double[] cos_sim = new double[numCategories];
     for(int i = 0; i < numCategories; i++) {
       cos_sim[i] = testExample.hashVector.cosineTo(vectors[i]);

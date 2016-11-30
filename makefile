@@ -4,10 +4,13 @@ clean:
 	rm -f ir/*/*.class
 	rm -f KNN_K*.gplot
 	rm -f Rocchio*.gplot
+	rm -f NaiveBayes*.gplot
 turnin: default
-	rm -f proj3_et7226_code.zip
-	zip proj3_et7226_code.zip ir/*/PageRank*
-	unzip -l proj3_et7226_code.zip
+	rm -f proj4_et7226_code.zip
+	zip proj4_et7226_code.zip ir/classifiers/*KNN* ir/classifiers/*Rocchio* ir/vsr/HashMapVector.*
+	unzip -l proj4_et7226_code.zip
+bayes:
+	java ir.classifiers.TestNaiveBayes
 knn:
 	java ir.classifiers.TestKNN -k 1
 	java ir.classifiers.TestKNN -k 3
