@@ -17,16 +17,8 @@ rocchio:
 index_trace:
 	 script proj3_et7226_retrieve_trace.txt
 plot:
-	gnuplot KNN.gplot > plot.ps
+	gnuplot All.gplot > plot.ps
 	gv plot.ps
 plot_train:
-	gnuplot KNNTrain.gplot > plot.ps
+	gnuplot AllTrain.gplot > plot.ps
 	gv plot.ps
-plot_r:
-	gnuplot Rocchio.gplot > plot.ps
-	gv plot.ps
-	rm plot.ps
-plot_train_r:
-	gnuplot RocchioTrain.gplot > plot.ps
-	gv plot.ps
-	rm plot.ps
