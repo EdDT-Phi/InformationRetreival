@@ -1,8 +1,1 @@
-corpora
 ir/*/*.class
-beta_graph*0*
-pseudo_graph*0*
-pseudo_graph15
-*.gplot
-page_ranks.txt
-indexed

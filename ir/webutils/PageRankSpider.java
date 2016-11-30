@@ -56,9 +56,9 @@ class PageRankSpider extends Spider{
    */
   public void printGraph() {
 	  	System.out.println("Graph structure: ");
-	  	for(Link link: page_graph.keySet()) {
-	  		System.out.println(link + "->" + new LinkedList(page_graph.get(link)));
-	  	}
+	  	// for(Link link: page_graph.keySet()) {
+	  	// 	System.out.println(link + "->" + new LinkedList(page_graph.get(link)));
+	  	// }
   }
 
 	/**
