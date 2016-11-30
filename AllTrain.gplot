@@ -7,4 +7,4 @@ set size 0.75,0.75
 set style data linespoints
 set key bottom right
 
-plot 'KNN_K1Train.data' title "KNN_K1", 'KNN_K3Train.data' title "KNN_K3", 'KNN_K5Train.data' title "KNN_K5", 'RocchioTrain.data' title "Rocchio"
+plot 'KNN_K1Train.data' title "KNN_K1", 'KNN_K3Train.data' title "KNN_K3", 'KNN_K5Train.data' title "KNN_K5", 'RocchioTrain.data' title "Rocchio",'Rocchio_negTrain.data' title "Rocchio_neg"

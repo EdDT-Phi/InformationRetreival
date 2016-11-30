@@ -14,6 +14,7 @@ knn:
 	java ir.classifiers.TestKNN -k 5
 rocchio:
 	java ir.classifiers.TestRocchio
+	java ir.classifiers.TestRocchio -neg
 index_trace:
 	 script proj3_et7226_retrieve_trace.txt
 plot:

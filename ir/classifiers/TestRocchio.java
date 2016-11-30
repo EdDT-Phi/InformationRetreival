@@ -29,8 +29,8 @@ public class TestRocchio {
         case "-debug":
           debug = true;
           break;
-        case "-k":
-          k = Integer.parseInt(args[++i]);
+        case "-neg":
+          neg = true;
           break;
         default:
           System.out.println("Unknown flag: " + args[i]);

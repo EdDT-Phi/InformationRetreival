@@ -95,6 +95,19 @@ public class Rocchio extends Classifier {
       // Scale vector by max weight, using idf's from inverted index
       vectors[ex.getCategory()].addScaled(ex.hashVector, 1/ex.hashVector.maxWeight(), invIndx);
     }
+
+    if(neg) {
+      // Do negative reinforcement
+      for(Example ex: trainExamples){
+        for(int i = 0; i < numCategories; i++) {
+          // Skip example's category
+          if(i == ex.getCategory()) continue;
+
+          // Scale vector by max weight, using idf's from inverted index
+          vectors[i].addScaled(ex.hashVector, -1/ex.hashVector.maxWeight(), invIndx);
+        }
+      }
+    }
   }
 
   /**
