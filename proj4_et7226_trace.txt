@@ -1,0 +1,3139 @@
+java ir.classifiers.TestNaiveBayes
+Loading Examples from /u/mooney/ir-code/corpora/dmoz-science/...
+Initializing Naive Bayes classifier...
+Generating 10 fold CV learning curves...
+Train Percentage: 0.0%
+  Calculating results for fold 0
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 32.222%
+  Calculating results for fold 1
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 40.0%
+  Calculating results for fold 2
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 40.0%
+  Calculating results for fold 3
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 31.111%
+  Calculating results for fold 4
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 35.556%
+  Calculating results for fold 5
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 31.111%
+  Calculating results for fold 6
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 32.222%
+  Calculating results for fold 7
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 27.778%
+  Calculating results for fold 8
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 35.556%
+  Calculating results for fold 9
+    Number of training examples: 0
+    Train Accuracy = 100.0%; Test Accuracy = 28.889%
+Train Percentage: 1.0%
+  Calculating results for fold 0
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 51.111%
+  Calculating results for fold 1
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 2
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 38.889%
+  Calculating results for fold 3
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 32.222%
+  Calculating results for fold 4
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 35.556%
+  Calculating results for fold 5
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 34.444%
+  Calculating results for fold 6
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 43.333%
+  Calculating results for fold 7
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 41.111%
+  Calculating results for fold 8
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 45.556%
+  Calculating results for fold 9
+    Number of training examples: 9
+    Train Accuracy = 100.0%; Test Accuracy = 40.0%
+Train Percentage: 5.0%
+  Calculating results for fold 0
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 61.111%
+  Calculating results for fold 1
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 65.556%
+  Calculating results for fold 2
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 54.444%
+  Calculating results for fold 3
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 63.333%
+  Calculating results for fold 4
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 56.667%
+  Calculating results for fold 5
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 61.111%
+  Calculating results for fold 6
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 57.778%
+  Calculating results for fold 7
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 62.222%
+  Calculating results for fold 8
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 57.778%
+  Calculating results for fold 9
+    Number of training examples: 42
+    Train Accuracy = 100.0%; Test Accuracy = 62.222%
+Train Percentage: 10.0%
+  Calculating results for fold 0
+    Number of training examples: 81
+    Train Accuracy = 97.531%; Test Accuracy = 65.556%
+  Calculating results for fold 1
+    Number of training examples: 81
+    Train Accuracy = 96.296%; Test Accuracy = 78.889%
+  Calculating results for fold 2
+    Number of training examples: 81
+    Train Accuracy = 97.531%; Test Accuracy = 70.0%
+  Calculating results for fold 3
+    Number of training examples: 81
+    Train Accuracy = 96.296%; Test Accuracy = 80.0%
+  Calculating results for fold 4
+    Number of training examples: 81
+    Train Accuracy = 97.531%; Test Accuracy = 66.667%
+  Calculating results for fold 5
+    Number of training examples: 81
+    Train Accuracy = 97.531%; Test Accuracy = 64.444%
+  Calculating results for fold 6
+    Number of training examples: 81
+    Train Accuracy = 96.296%; Test Accuracy = 71.111%
+  Calculating results for fold 7
+    Number of training examples: 81
+    Train Accuracy = 97.531%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 81
+    Train Accuracy = 97.531%; Test Accuracy = 64.444%
+  Calculating results for fold 9
+    Number of training examples: 81
+    Train Accuracy = 96.296%; Test Accuracy = 65.556%
+Train Percentage: 20.0%
+  Calculating results for fold 0
+    Number of training examples: 162
+    Train Accuracy = 98.148%; Test Accuracy = 68.889%
+  Calculating results for fold 1
+    Number of training examples: 162
+    Train Accuracy = 96.914%; Test Accuracy = 80.0%
+  Calculating results for fold 2
+    Number of training examples: 162
+    Train Accuracy = 96.296%; Test Accuracy = 71.111%
+  Calculating results for fold 3
+    Number of training examples: 162
+    Train Accuracy = 96.914%; Test Accuracy = 78.889%
+  Calculating results for fold 4
+    Number of training examples: 162
+    Train Accuracy = 97.531%; Test Accuracy = 77.778%
+  Calculating results for fold 5
+    Number of training examples: 162
+    Train Accuracy = 96.296%; Test Accuracy = 65.556%
+  Calculating results for fold 6
+    Number of training examples: 162
+    Train Accuracy = 96.296%; Test Accuracy = 77.778%
+  Calculating results for fold 7
+    Number of training examples: 162
+    Train Accuracy = 97.531%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 162
+    Train Accuracy = 96.914%; Test Accuracy = 72.222%
+  Calculating results for fold 9
+    Number of training examples: 162
+    Train Accuracy = 96.296%; Test Accuracy = 78.889%
+Train Percentage: 30.0%
+  Calculating results for fold 0
+    Number of training examples: 243
+    Train Accuracy = 97.119%; Test Accuracy = 68.889%
+  Calculating results for fold 1
+    Number of training examples: 243
+    Train Accuracy = 97.531%; Test Accuracy = 76.667%
+  Calculating results for fold 2
+    Number of training examples: 243
+    Train Accuracy = 96.708%; Test Accuracy = 73.333%
+  Calculating results for fold 3
+    Number of training examples: 243
+    Train Accuracy = 95.473%; Test Accuracy = 80.0%
+  Calculating results for fold 4
+    Number of training examples: 243
+    Train Accuracy = 95.062%; Test Accuracy = 77.778%
+  Calculating results for fold 5
+    Number of training examples: 243
+    Train Accuracy = 95.062%; Test Accuracy = 66.667%
+  Calculating results for fold 6
+    Number of training examples: 243
+    Train Accuracy = 94.65%; Test Accuracy = 81.111%
+  Calculating results for fold 7
+    Number of training examples: 243
+    Train Accuracy = 94.65%; Test Accuracy = 81.111%
+  Calculating results for fold 8
+    Number of training examples: 243
+    Train Accuracy = 95.062%; Test Accuracy = 73.333%
+  Calculating results for fold 9
+    Number of training examples: 243
+    Train Accuracy = 95.473%; Test Accuracy = 82.222%
+Train Percentage: 40.0%
+  Calculating results for fold 0
+    Number of training examples: 324
+    Train Accuracy = 98.765%; Test Accuracy = 70.0%
+  Calculating results for fold 1
+    Number of training examples: 324
+    Train Accuracy = 98.457%; Test Accuracy = 83.333%
+  Calculating results for fold 2
+    Number of training examples: 324
+    Train Accuracy = 98.148%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 324
+    Train Accuracy = 96.914%; Test Accuracy = 85.556%
+  Calculating results for fold 4
+    Number of training examples: 324
+    Train Accuracy = 97.222%; Test Accuracy = 76.667%
+  Calculating results for fold 5
+    Number of training examples: 324
+    Train Accuracy = 97.531%; Test Accuracy = 67.778%
+  Calculating results for fold 6
+    Number of training examples: 324
+    Train Accuracy = 96.914%; Test Accuracy = 75.556%
+  Calculating results for fold 7
+    Number of training examples: 324
+    Train Accuracy = 97.84%; Test Accuracy = 82.222%
+  Calculating results for fold 8
+    Number of training examples: 324
+    Train Accuracy = 97.222%; Test Accuracy = 74.444%
+  Calculating results for fold 9
+    Number of training examples: 324
+    Train Accuracy = 97.222%; Test Accuracy = 80.0%
+Train Percentage: 50.0%
+  Calculating results for fold 0
+    Number of training examples: 405
+    Train Accuracy = 96.79%; Test Accuracy = 76.667%
+  Calculating results for fold 1
+    Number of training examples: 405
+    Train Accuracy = 97.037%; Test Accuracy = 84.444%
+  Calculating results for fold 2
+    Number of training examples: 405
+    Train Accuracy = 96.543%; Test Accuracy = 73.333%
+  Calculating results for fold 3
+    Number of training examples: 405
+    Train Accuracy = 97.037%; Test Accuracy = 86.667%
+  Calculating results for fold 4
+    Number of training examples: 405
+    Train Accuracy = 97.284%; Test Accuracy = 77.778%
+  Calculating results for fold 5
+    Number of training examples: 405
+    Train Accuracy = 97.037%; Test Accuracy = 70.0%
+  Calculating results for fold 6
+    Number of training examples: 405
+    Train Accuracy = 96.79%; Test Accuracy = 81.111%
+  Calculating results for fold 7
+    Number of training examples: 405
+    Train Accuracy = 97.037%; Test Accuracy = 80.0%
+  Calculating results for fold 8
+    Number of training examples: 405
+    Train Accuracy = 96.79%; Test Accuracy = 72.222%
+  Calculating results for fold 9
+    Number of training examples: 405
+    Train Accuracy = 97.284%; Test Accuracy = 80.0%
+Train Percentage: 60.0%
+  Calculating results for fold 0
+    Number of training examples: 486
+    Train Accuracy = 96.296%; Test Accuracy = 75.556%
+  Calculating results for fold 1
+    Number of training examples: 486
+    Train Accuracy = 95.885%; Test Accuracy = 87.778%
+  Calculating results for fold 2
+    Number of training examples: 486
+    Train Accuracy = 95.473%; Test Accuracy = 71.111%
+  Calculating results for fold 3
+    Number of training examples: 486
+    Train Accuracy = 95.679%; Test Accuracy = 86.667%
+  Calculating results for fold 4
+    Number of training examples: 486
+    Train Accuracy = 95.267%; Test Accuracy = 81.111%
+  Calculating results for fold 5
+    Number of training examples: 486
+    Train Accuracy = 94.856%; Test Accuracy = 70.0%
+  Calculating results for fold 6
+    Number of training examples: 486
+    Train Accuracy = 96.914%; Test Accuracy = 80.0%
+  Calculating results for fold 7
+    Number of training examples: 486
+    Train Accuracy = 96.502%; Test Accuracy = 82.222%
+  Calculating results for fold 8
+    Number of training examples: 486
+    Train Accuracy = 96.708%; Test Accuracy = 75.556%
+  Calculating results for fold 9
+    Number of training examples: 486
+    Train Accuracy = 96.708%; Test Accuracy = 80.0%
+Train Percentage: 70.0%
+  Calculating results for fold 0
+    Number of training examples: 567
+    Train Accuracy = 96.12%; Test Accuracy = 75.556%
+  Calculating results for fold 1
+    Number of training examples: 567
+    Train Accuracy = 95.944%; Test Accuracy = 87.778%
+  Calculating results for fold 2
+    Number of training examples: 567
+    Train Accuracy = 96.12%; Test Accuracy = 72.222%
+  Calculating results for fold 3
+    Number of training examples: 567
+    Train Accuracy = 95.944%; Test Accuracy = 85.556%
+  Calculating results for fold 4
+    Number of training examples: 567
+    Train Accuracy = 96.12%; Test Accuracy = 83.333%
+  Calculating results for fold 5
+    Number of training examples: 567
+    Train Accuracy = 95.238%; Test Accuracy = 72.222%
+  Calculating results for fold 6
+    Number of training examples: 567
+    Train Accuracy = 97.531%; Test Accuracy = 83.333%
+  Calculating results for fold 7
+    Number of training examples: 567
+    Train Accuracy = 96.649%; Test Accuracy = 83.333%
+  Calculating results for fold 8
+    Number of training examples: 567
+    Train Accuracy = 96.473%; Test Accuracy = 74.444%
+  Calculating results for fold 9
+    Number of training examples: 567
+    Train Accuracy = 96.825%; Test Accuracy = 81.111%
+Train Percentage: 80.0%
+  Calculating results for fold 0
+    Number of training examples: 648
+    Train Accuracy = 95.37%; Test Accuracy = 81.111%
+  Calculating results for fold 1
+    Number of training examples: 648
+    Train Accuracy = 95.988%; Test Accuracy = 85.556%
+  Calculating results for fold 2
+    Number of training examples: 648
+    Train Accuracy = 96.142%; Test Accuracy = 73.333%
+  Calculating results for fold 3
+    Number of training examples: 648
+    Train Accuracy = 95.525%; Test Accuracy = 86.667%
+  Calculating results for fold 4
+    Number of training examples: 648
+    Train Accuracy = 95.679%; Test Accuracy = 80.0%
+  Calculating results for fold 5
+    Number of training examples: 648
+    Train Accuracy = 94.444%; Test Accuracy = 72.222%
+  Calculating results for fold 6
+    Number of training examples: 648
+    Train Accuracy = 96.759%; Test Accuracy = 85.556%
+  Calculating results for fold 7
+    Number of training examples: 648
+    Train Accuracy = 96.142%; Test Accuracy = 78.889%
+  Calculating results for fold 8
+    Number of training examples: 648
+    Train Accuracy = 96.142%; Test Accuracy = 77.778%
+  Calculating results for fold 9
+    Number of training examples: 648
+    Train Accuracy = 96.142%; Test Accuracy = 81.111%
+Train Percentage: 90.0%
+  Calculating results for fold 0
+    Number of training examples: 729
+    Train Accuracy = 96.159%; Test Accuracy = 78.889%
+  Calculating results for fold 1
+    Number of training examples: 729
+    Train Accuracy = 96.296%; Test Accuracy = 84.444%
+  Calculating results for fold 2
+    Number of training examples: 729
+    Train Accuracy = 96.296%; Test Accuracy = 73.333%
+  Calculating results for fold 3
+    Number of training examples: 729
+    Train Accuracy = 95.61%; Test Accuracy = 86.667%
+  Calculating results for fold 4
+    Number of training examples: 729
+    Train Accuracy = 96.022%; Test Accuracy = 81.111%
+  Calculating results for fold 5
+    Number of training examples: 729
+    Train Accuracy = 95.062%; Test Accuracy = 71.111%
+  Calculating results for fold 6
+    Number of training examples: 729
+    Train Accuracy = 96.708%; Test Accuracy = 86.667%
+  Calculating results for fold 7
+    Number of training examples: 729
+    Train Accuracy = 95.885%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 729
+    Train Accuracy = 95.885%; Test Accuracy = 78.889%
+  Calculating results for fold 9
+    Number of training examples: 729
+    Train Accuracy = 95.885%; Test Accuracy = 82.222%
+Train Percentage: 100.0%
+  Calculating results for fold 0
+    Number of training examples: 810
+    Train Accuracy = 95.802%; Test Accuracy = 78.889%
+  Calculating results for fold 1
+    Number of training examples: 810
+    Train Accuracy = 95.802%; Test Accuracy = 86.667%
+  Calculating results for fold 2
+    Number of training examples: 810
+    Train Accuracy = 95.432%; Test Accuracy = 76.667%
+  Calculating results for fold 3
+    Number of training examples: 810
+    Train Accuracy = 95.432%; Test Accuracy = 86.667%
+  Calculating results for fold 4
+    Number of training examples: 810
+    Train Accuracy = 95.679%; Test Accuracy = 81.111%
+  Calculating results for fold 5
+    Number of training examples: 810
+    Train Accuracy = 95.062%; Test Accuracy = 71.111%
+  Calculating results for fold 6
+    Number of training examples: 810
+    Train Accuracy = 96.42%; Test Accuracy = 84.444%
+  Calculating results for fold 7
+    Number of training examples: 810
+    Train Accuracy = 95.062%; Test Accuracy = 78.889%
+  Calculating results for fold 8
+    Number of training examples: 810
+    Train Accuracy = 95.926%; Test Accuracy = 80.0%
+  Calculating results for fold 9
+    Number of training examples: 810
+    Train Accuracy = 95.556%; Test Accuracy = 84.444%
+
+Total Training time in seconds: 2.351
+Testing time per example in milliseconds: 0.04
+GNUPLOT train accuracy file is NaiveBayesTrain.gplot
+GNUPLOT test accuracy file is NaiveBayes.gplot
+
+
+
+java ir.classifiers.TestKNN -k 1
+Loading Examples from /u/mooney/ir-code/corpora/dmoz-science/...
+Initializing KNN_K1 classifier...
+Generating 10 fold CV learning curves...
+Train Percentage: 0.0%
+  Calculating results for fold 0
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 35.556%
+  Calculating results for fold 1
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 31.111%
+  Calculating results for fold 2
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 35.556%
+  Calculating results for fold 3
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 35.556%
+  Calculating results for fold 4
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 40.0%
+  Calculating results for fold 5
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 32.222%
+  Calculating results for fold 6
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 24.444%
+  Calculating results for fold 7
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 30.0%
+  Calculating results for fold 8
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 38.889%
+  Calculating results for fold 9
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 24.444%
+Train Percentage: 1.0%
+  Calculating results for fold 0
+    Number of training examples: 9
+Indexed 9 documents with 3640 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 42.222%
+  Calculating results for fold 1
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 45.556%
+  Calculating results for fold 2
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 44.444%
+  Calculating results for fold 3
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 47.778%
+  Calculating results for fold 4
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 50.0%
+  Calculating results for fold 5
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 50.0%
+  Calculating results for fold 6
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 57.778%
+  Calculating results for fold 7
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 50.0%
+  Calculating results for fold 8
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 48.889%
+  Calculating results for fold 9
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 46.667%
+Train Percentage: 5.0%
+  Calculating results for fold 0
+    Number of training examples: 42
+Indexed 42 documents with 8423 unique terms.
+    Train Accuracy = 97.619%; Test Accuracy = 62.222%
+  Calculating results for fold 1
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 66.667%
+  Calculating results for fold 2
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 45.556%
+  Calculating results for fold 3
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 63.333%
+  Calculating results for fold 4
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 56.667%
+  Calculating results for fold 5
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 54.444%
+  Calculating results for fold 6
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 57.778%
+  Calculating results for fold 7
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 61.111%
+  Calculating results for fold 8
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 57.778%
+  Calculating results for fold 9
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 60.0%
+Train Percentage: 10.0%
+  Calculating results for fold 0
+    Number of training examples: 81
+Indexed 81 documents with 12863 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 63.333%
+  Calculating results for fold 1
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 71.111%
+  Calculating results for fold 2
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 51.111%
+  Calculating results for fold 3
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 56.667%
+  Calculating results for fold 4
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 63.333%
+  Calculating results for fold 5
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 60.0%
+  Calculating results for fold 6
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 65.556%
+  Calculating results for fold 7
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 62.222%
+  Calculating results for fold 8
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 56.667%
+  Calculating results for fold 9
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 68.889%
+Train Percentage: 20.0%
+  Calculating results for fold 0
+    Number of training examples: 162
+Indexed 162 documents with 19324 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 65.556%
+  Calculating results for fold 1
+    Number of training examples: 162
+Indexed 162 documents with 17499 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 71.111%
+  Calculating results for fold 2
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 61.111%
+  Calculating results for fold 3
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 70.0%
+  Calculating results for fold 4
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 67.778%
+  Calculating results for fold 5
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 61.111%
+  Calculating results for fold 6
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 68.889%
+  Calculating results for fold 7
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 72.222%
+  Calculating results for fold 8
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 67.778%
+  Calculating results for fold 9
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 68.889%
+Train Percentage: 30.0%
+  Calculating results for fold 0
+    Number of training examples: 243
+Indexed 243 documents with 27118 unique terms.
+    Train Accuracy = 99.588%; Test Accuracy = 68.889%
+  Calculating results for fold 1
+    Number of training examples: 243
+Indexed 243 documents with 25540 unique terms.
+    Train Accuracy = 99.177%; Test Accuracy = 71.111%
+  Calculating results for fold 2
+    Number of training examples: 243
+Indexed 243 documents with 26318 unique terms.
+    Train Accuracy = 99.177%; Test Accuracy = 62.222%
+  Calculating results for fold 3
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 99.177%; Test Accuracy = 73.333%
+  Calculating results for fold 4
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 99.177%; Test Accuracy = 63.333%
+  Calculating results for fold 5
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 64.444%
+  Calculating results for fold 6
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 99.177%; Test Accuracy = 68.889%
+  Calculating results for fold 7
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 99.177%; Test Accuracy = 68.889%
+  Calculating results for fold 8
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 99.588%; Test Accuracy = 77.778%
+  Calculating results for fold 9
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 70.0%
+Train Percentage: 40.0%
+  Calculating results for fold 0
+    Number of training examples: 324
+Indexed 324 documents with 32927 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 67.778%
+  Calculating results for fold 1
+    Number of training examples: 324
+Indexed 324 documents with 31382 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 67.778%
+  Calculating results for fold 2
+    Number of training examples: 324
+Indexed 324 documents with 32058 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 65.556%
+  Calculating results for fold 3
+    Number of training examples: 324
+Indexed 324 documents with 28708 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 73.333%
+  Calculating results for fold 4
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 99.074%; Test Accuracy = 66.667%
+  Calculating results for fold 5
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 99.691%; Test Accuracy = 62.222%
+  Calculating results for fold 6
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 71.111%
+  Calculating results for fold 7
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 67.778%
+  Calculating results for fold 8
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 99.691%; Test Accuracy = 73.333%
+  Calculating results for fold 9
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 70.0%
+Train Percentage: 50.0%
+  Calculating results for fold 0
+    Number of training examples: 405
+Indexed 405 documents with 36452 unique terms.
+    Train Accuracy = 99.753%; Test Accuracy = 68.889%
+  Calculating results for fold 1
+    Number of training examples: 405
+Indexed 405 documents with 34994 unique terms.
+    Train Accuracy = 99.506%; Test Accuracy = 72.222%
+  Calculating results for fold 2
+    Number of training examples: 405
+Indexed 405 documents with 35645 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 405
+Indexed 405 documents with 32526 unique terms.
+    Train Accuracy = 99.259%; Test Accuracy = 73.333%
+  Calculating results for fold 4
+    Number of training examples: 405
+Indexed 405 documents with 35843 unique terms.
+    Train Accuracy = 99.259%; Test Accuracy = 71.111%
+  Calculating results for fold 5
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 99.506%; Test Accuracy = 63.333%
+  Calculating results for fold 6
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 99.753%; Test Accuracy = 67.778%
+  Calculating results for fold 7
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 99.753%; Test Accuracy = 70.0%
+  Calculating results for fold 8
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 99.259%; Test Accuracy = 70.0%
+  Calculating results for fold 9
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 99.259%; Test Accuracy = 73.333%
+Train Percentage: 60.0%
+  Calculating results for fold 0
+    Number of training examples: 486
+Indexed 486 documents with 40642 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 70.0%
+  Calculating results for fold 1
+    Number of training examples: 486
+Indexed 486 documents with 39171 unique terms.
+    Train Accuracy = 99.794%; Test Accuracy = 74.444%
+  Calculating results for fold 2
+    Number of training examples: 486
+Indexed 486 documents with 39779 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 70.0%
+  Calculating results for fold 3
+    Number of training examples: 486
+Indexed 486 documents with 36893 unique terms.
+    Train Accuracy = 99.794%; Test Accuracy = 75.556%
+  Calculating results for fold 4
+    Number of training examples: 486
+Indexed 486 documents with 40112 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 70.0%
+  Calculating results for fold 5
+    Number of training examples: 486
+Indexed 486 documents with 40715 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 64.444%
+  Calculating results for fold 6
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 99.588%; Test Accuracy = 67.778%
+  Calculating results for fold 7
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 70.0%
+  Calculating results for fold 8
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 99.588%; Test Accuracy = 72.222%
+  Calculating results for fold 9
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 99.588%; Test Accuracy = 76.667%
+Train Percentage: 70.0%
+  Calculating results for fold 0
+    Number of training examples: 567
+Indexed 567 documents with 44723 unique terms.
+    Train Accuracy = 99.471%; Test Accuracy = 71.111%
+  Calculating results for fold 1
+    Number of training examples: 567
+Indexed 567 documents with 43561 unique terms.
+    Train Accuracy = 99.471%; Test Accuracy = 77.778%
+  Calculating results for fold 2
+    Number of training examples: 567
+Indexed 567 documents with 43902 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 68.889%
+  Calculating results for fold 3
+    Number of training examples: 567
+Indexed 567 documents with 41214 unique terms.
+    Train Accuracy = 99.295%; Test Accuracy = 75.556%
+  Calculating results for fold 4
+    Number of training examples: 567
+Indexed 567 documents with 44287 unique terms.
+    Train Accuracy = 99.471%; Test Accuracy = 68.889%
+  Calculating results for fold 5
+    Number of training examples: 567
+Indexed 567 documents with 44841 unique terms.
+    Train Accuracy = 99.647%; Test Accuracy = 66.667%
+  Calculating results for fold 6
+    Number of training examples: 567
+Indexed 567 documents with 43612 unique terms.
+    Train Accuracy = 99.471%; Test Accuracy = 73.333%
+  Calculating results for fold 7
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 99.824%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 99.647%; Test Accuracy = 73.333%
+  Calculating results for fold 9
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 99.471%; Test Accuracy = 74.444%
+Train Percentage: 80.0%
+  Calculating results for fold 0
+    Number of training examples: 648
+Indexed 648 documents with 48423 unique terms.
+    Train Accuracy = 99.537%; Test Accuracy = 72.222%
+  Calculating results for fold 1
+    Number of training examples: 648
+Indexed 648 documents with 47311 unique terms.
+    Train Accuracy = 99.537%; Test Accuracy = 76.667%
+  Calculating results for fold 2
+    Number of training examples: 648
+Indexed 648 documents with 47656 unique terms.
+    Train Accuracy = 99.846%; Test Accuracy = 64.444%
+  Calculating results for fold 3
+    Number of training examples: 648
+Indexed 648 documents with 45128 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 74.444%
+  Calculating results for fold 4
+    Number of training examples: 648
+Indexed 648 documents with 48038 unique terms.
+    Train Accuracy = 99.537%; Test Accuracy = 71.111%
+  Calculating results for fold 5
+    Number of training examples: 648
+Indexed 648 documents with 48561 unique terms.
+    Train Accuracy = 99.228%; Test Accuracy = 67.778%
+  Calculating results for fold 6
+    Number of training examples: 648
+Indexed 648 documents with 47362 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 73.333%
+  Calculating results for fold 7
+    Number of training examples: 648
+Indexed 648 documents with 47191 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 73.333%
+  Calculating results for fold 8
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 99.691%; Test Accuracy = 75.556%
+  Calculating results for fold 9
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 99.691%; Test Accuracy = 73.333%
+Train Percentage: 90.0%
+  Calculating results for fold 0
+    Number of training examples: 729
+Indexed 729 documents with 51035 unique terms.
+    Train Accuracy = 99.451%; Test Accuracy = 70.0%
+  Calculating results for fold 1
+    Number of training examples: 729
+Indexed 729 documents with 49996 unique terms.
+    Train Accuracy = 99.588%; Test Accuracy = 77.778%
+  Calculating results for fold 2
+    Number of training examples: 729
+Indexed 729 documents with 50286 unique terms.
+    Train Accuracy = 99.314%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 729
+Indexed 729 documents with 47860 unique terms.
+    Train Accuracy = 99.451%; Test Accuracy = 75.556%
+  Calculating results for fold 4
+    Number of training examples: 729
+Indexed 729 documents with 50692 unique terms.
+    Train Accuracy = 99.863%; Test Accuracy = 71.111%
+  Calculating results for fold 5
+    Number of training examples: 729
+Indexed 729 documents with 51194 unique terms.
+    Train Accuracy = 99.451%; Test Accuracy = 67.778%
+  Calculating results for fold 6
+    Number of training examples: 729
+Indexed 729 documents with 50002 unique terms.
+    Train Accuracy = 99.451%; Test Accuracy = 75.556%
+  Calculating results for fold 7
+    Number of training examples: 729
+Indexed 729 documents with 50027 unique terms.
+    Train Accuracy = 99.726%; Test Accuracy = 70.0%
+  Calculating results for fold 8
+    Number of training examples: 729
+Indexed 729 documents with 51651 unique terms.
+    Train Accuracy = 99.726%; Test Accuracy = 75.556%
+  Calculating results for fold 9
+    Number of training examples: 729
+Indexed 729 documents with 51394 unique terms.
+    Train Accuracy = 99.588%; Test Accuracy = 75.556%
+Train Percentage: 100.0%
+  Calculating results for fold 0
+    Number of training examples: 810
+Indexed 810 documents with 52682 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 74.444%
+  Calculating results for fold 1
+    Number of training examples: 810
+Indexed 810 documents with 51664 unique terms.
+    Train Accuracy = 99.506%; Test Accuracy = 77.778%
+  Calculating results for fold 2
+    Number of training examples: 810
+Indexed 810 documents with 51945 unique terms.
+    Train Accuracy = 99.506%; Test Accuracy = 68.889%
+  Calculating results for fold 3
+    Number of training examples: 810
+Indexed 810 documents with 49546 unique terms.
+    Train Accuracy = 99.259%; Test Accuracy = 75.556%
+  Calculating results for fold 4
+    Number of training examples: 810
+Indexed 810 documents with 52349 unique terms.
+    Train Accuracy = 99.63%; Test Accuracy = 71.111%
+  Calculating results for fold 5
+    Number of training examples: 810
+Indexed 810 documents with 52847 unique terms.
+    Train Accuracy = 99.259%; Test Accuracy = 66.667%
+  Calculating results for fold 6
+    Number of training examples: 810
+Indexed 810 documents with 51657 unique terms.
+    Train Accuracy = 99.506%; Test Accuracy = 73.333%
+  Calculating results for fold 7
+    Number of training examples: 810
+Indexed 810 documents with 51729 unique terms.
+    Train Accuracy = 99.259%; Test Accuracy = 68.889%
+  Calculating results for fold 8
+    Number of training examples: 810
+Indexed 810 documents with 53290 unique terms.
+    Train Accuracy = 99.383%; Test Accuracy = 75.556%
+  Calculating results for fold 9
+    Number of training examples: 810
+Indexed 810 documents with 53702 unique terms.
+    Train Accuracy = 99.506%; Test Accuracy = 76.667%
+
+Total Training time in seconds: 2.02
+Testing time per example in milliseconds: 0.21
+GNUPLOT train accuracy file is KNN_K1Train.gplot
+GNUPLOT test accuracy file is KNN_K1.gplot
+
+
+
+java ir.classifiers.TestKNN -k 3
+Loading Examples from /u/mooney/ir-code/corpora/dmoz-science/...
+Initializing KNN_K3 classifier...
+Generating 10 fold CV learning curves...
+Train Percentage: 0.0%
+  Calculating results for fold 0
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 34.444%
+  Calculating results for fold 1
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 36.667%
+  Calculating results for fold 2
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 36.667%
+  Calculating results for fold 3
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 25.556%
+  Calculating results for fold 4
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 36.667%
+  Calculating results for fold 5
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 6
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 31.111%
+  Calculating results for fold 7
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 28.889%
+  Calculating results for fold 8
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 31.111%
+  Calculating results for fold 9
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 40.0%
+Train Percentage: 1.0%
+  Calculating results for fold 0
+    Number of training examples: 9
+Indexed 9 documents with 3640 unique terms.
+    Train Accuracy = 66.667%; Test Accuracy = 50.0%
+  Calculating results for fold 1
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 36.667%
+  Calculating results for fold 2
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 43.333%
+  Calculating results for fold 3
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 88.889%; Test Accuracy = 41.111%
+  Calculating results for fold 4
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 42.222%
+  Calculating results for fold 5
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 47.778%
+  Calculating results for fold 6
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 88.889%; Test Accuracy = 45.556%
+  Calculating results for fold 7
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 52.222%
+  Calculating results for fold 8
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 50.0%
+  Calculating results for fold 9
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 41.111%
+Train Percentage: 5.0%
+  Calculating results for fold 0
+    Number of training examples: 42
+Indexed 42 documents with 8423 unique terms.
+    Train Accuracy = 73.81%; Test Accuracy = 61.111%
+  Calculating results for fold 1
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 64.286%; Test Accuracy = 60.0%
+  Calculating results for fold 2
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 69.048%; Test Accuracy = 58.889%
+  Calculating results for fold 3
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 66.667%; Test Accuracy = 63.333%
+  Calculating results for fold 4
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 64.286%; Test Accuracy = 51.111%
+  Calculating results for fold 5
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 71.429%; Test Accuracy = 54.444%
+  Calculating results for fold 6
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 69.048%; Test Accuracy = 58.889%
+  Calculating results for fold 7
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 69.048%; Test Accuracy = 65.556%
+  Calculating results for fold 8
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 69.048%; Test Accuracy = 53.333%
+  Calculating results for fold 9
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 69.048%; Test Accuracy = 60.0%
+Train Percentage: 10.0%
+  Calculating results for fold 0
+    Number of training examples: 81
+Indexed 81 documents with 12863 unique terms.
+    Train Accuracy = 79.012%; Test Accuracy = 64.444%
+  Calculating results for fold 1
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 71.605%; Test Accuracy = 67.778%
+  Calculating results for fold 2
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 74.074%; Test Accuracy = 60.0%
+  Calculating results for fold 3
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 72.84%; Test Accuracy = 61.111%
+  Calculating results for fold 4
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 72.84%; Test Accuracy = 56.667%
+  Calculating results for fold 5
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 55.556%
+  Calculating results for fold 6
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 72.84%; Test Accuracy = 68.889%
+  Calculating results for fold 7
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 76.543%; Test Accuracy = 68.889%
+  Calculating results for fold 8
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 75.309%; Test Accuracy = 60.0%
+  Calculating results for fold 9
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 74.074%; Test Accuracy = 63.333%
+Train Percentage: 20.0%
+  Calculating results for fold 0
+    Number of training examples: 162
+Indexed 162 documents with 19324 unique terms.
+    Train Accuracy = 85.802%; Test Accuracy = 64.444%
+  Calculating results for fold 1
+    Number of training examples: 162
+Indexed 162 documents with 17499 unique terms.
+    Train Accuracy = 79.012%; Test Accuracy = 75.556%
+  Calculating results for fold 2
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 84.568%; Test Accuracy = 62.222%
+  Calculating results for fold 3
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 83.951%; Test Accuracy = 66.667%
+  Calculating results for fold 4
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 83.951%; Test Accuracy = 70.0%
+  Calculating results for fold 5
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 84.568%; Test Accuracy = 64.444%
+  Calculating results for fold 6
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 84.568%; Test Accuracy = 76.667%
+  Calculating results for fold 7
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 83.333%; Test Accuracy = 68.889%
+  Calculating results for fold 8
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 82.716%; Test Accuracy = 67.778%
+  Calculating results for fold 9
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 83.333%; Test Accuracy = 67.778%
+Train Percentage: 30.0%
+  Calculating results for fold 0
+    Number of training examples: 243
+Indexed 243 documents with 27118 unique terms.
+    Train Accuracy = 87.243%; Test Accuracy = 66.667%
+  Calculating results for fold 1
+    Number of training examples: 243
+Indexed 243 documents with 25540 unique terms.
+    Train Accuracy = 83.951%; Test Accuracy = 74.444%
+  Calculating results for fold 2
+    Number of training examples: 243
+Indexed 243 documents with 26318 unique terms.
+    Train Accuracy = 83.951%; Test Accuracy = 62.222%
+  Calculating results for fold 3
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 84.362%; Test Accuracy = 74.444%
+  Calculating results for fold 4
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 85.597%; Test Accuracy = 66.667%
+  Calculating results for fold 5
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 84.774%; Test Accuracy = 63.333%
+  Calculating results for fold 6
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 85.185%; Test Accuracy = 75.556%
+  Calculating results for fold 7
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 83.951%; Test Accuracy = 70.0%
+  Calculating results for fold 8
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 84.774%; Test Accuracy = 73.333%
+  Calculating results for fold 9
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 84.774%; Test Accuracy = 68.889%
+Train Percentage: 40.0%
+  Calculating results for fold 0
+    Number of training examples: 324
+Indexed 324 documents with 32927 unique terms.
+    Train Accuracy = 87.037%; Test Accuracy = 70.0%
+  Calculating results for fold 1
+    Number of training examples: 324
+Indexed 324 documents with 31382 unique terms.
+    Train Accuracy = 84.568%; Test Accuracy = 78.889%
+  Calculating results for fold 2
+    Number of training examples: 324
+Indexed 324 documents with 32058 unique terms.
+    Train Accuracy = 86.111%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 324
+Indexed 324 documents with 28708 unique terms.
+    Train Accuracy = 84.568%; Test Accuracy = 76.667%
+  Calculating results for fold 4
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 87.346%; Test Accuracy = 73.333%
+  Calculating results for fold 5
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 86.728%; Test Accuracy = 62.222%
+  Calculating results for fold 6
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 87.963%; Test Accuracy = 70.0%
+  Calculating results for fold 7
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 86.728%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 87.346%; Test Accuracy = 73.333%
+  Calculating results for fold 9
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 87.654%; Test Accuracy = 71.111%
+Train Percentage: 50.0%
+  Calculating results for fold 0
+    Number of training examples: 405
+Indexed 405 documents with 36452 unique terms.
+    Train Accuracy = 84.938%; Test Accuracy = 68.889%
+  Calculating results for fold 1
+    Number of training examples: 405
+Indexed 405 documents with 34994 unique terms.
+    Train Accuracy = 84.691%; Test Accuracy = 70.0%
+  Calculating results for fold 2
+    Number of training examples: 405
+Indexed 405 documents with 35645 unique terms.
+    Train Accuracy = 84.938%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 405
+Indexed 405 documents with 32526 unique terms.
+    Train Accuracy = 82.963%; Test Accuracy = 75.556%
+  Calculating results for fold 4
+    Number of training examples: 405
+Indexed 405 documents with 35843 unique terms.
+    Train Accuracy = 85.679%; Test Accuracy = 73.333%
+  Calculating results for fold 5
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 86.667%; Test Accuracy = 63.333%
+  Calculating results for fold 6
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 86.42%; Test Accuracy = 77.778%
+  Calculating results for fold 7
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 86.667%; Test Accuracy = 72.222%
+  Calculating results for fold 8
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 87.16%; Test Accuracy = 75.556%
+  Calculating results for fold 9
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 85.926%; Test Accuracy = 70.0%
+Train Percentage: 60.0%
+  Calculating results for fold 0
+    Number of training examples: 486
+Indexed 486 documents with 40642 unique terms.
+    Train Accuracy = 84.979%; Test Accuracy = 67.778%
+  Calculating results for fold 1
+    Number of training examples: 486
+Indexed 486 documents with 39171 unique terms.
+    Train Accuracy = 83.951%; Test Accuracy = 74.444%
+  Calculating results for fold 2
+    Number of training examples: 486
+Indexed 486 documents with 39779 unique terms.
+    Train Accuracy = 83.951%; Test Accuracy = 64.444%
+  Calculating results for fold 3
+    Number of training examples: 486
+Indexed 486 documents with 36893 unique terms.
+    Train Accuracy = 84.362%; Test Accuracy = 75.556%
+  Calculating results for fold 4
+    Number of training examples: 486
+Indexed 486 documents with 40112 unique terms.
+    Train Accuracy = 84.979%; Test Accuracy = 73.333%
+  Calculating results for fold 5
+    Number of training examples: 486
+Indexed 486 documents with 40715 unique terms.
+    Train Accuracy = 87.243%; Test Accuracy = 63.333%
+  Calculating results for fold 6
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 86.42%; Test Accuracy = 76.667%
+  Calculating results for fold 7
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 86.626%; Test Accuracy = 72.222%
+  Calculating results for fold 8
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 86.214%; Test Accuracy = 72.222%
+  Calculating results for fold 9
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 86.626%; Test Accuracy = 71.111%
+Train Percentage: 70.0%
+  Calculating results for fold 0
+    Number of training examples: 567
+Indexed 567 documents with 44723 unique terms.
+    Train Accuracy = 85.714%; Test Accuracy = 71.111%
+  Calculating results for fold 1
+    Number of training examples: 567
+Indexed 567 documents with 43561 unique terms.
+    Train Accuracy = 85.185%; Test Accuracy = 74.444%
+  Calculating results for fold 2
+    Number of training examples: 567
+Indexed 567 documents with 43902 unique terms.
+    Train Accuracy = 84.832%; Test Accuracy = 62.222%
+  Calculating results for fold 3
+    Number of training examples: 567
+Indexed 567 documents with 41214 unique terms.
+    Train Accuracy = 84.656%; Test Accuracy = 77.778%
+  Calculating results for fold 4
+    Number of training examples: 567
+Indexed 567 documents with 44287 unique terms.
+    Train Accuracy = 87.302%; Test Accuracy = 72.222%
+  Calculating results for fold 5
+    Number of training examples: 567
+Indexed 567 documents with 44841 unique terms.
+    Train Accuracy = 87.302%; Test Accuracy = 68.889%
+  Calculating results for fold 6
+    Number of training examples: 567
+Indexed 567 documents with 43612 unique terms.
+    Train Accuracy = 84.832%; Test Accuracy = 73.333%
+  Calculating results for fold 7
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 83.951%; Test Accuracy = 74.444%
+  Calculating results for fold 8
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 84.48%; Test Accuracy = 74.444%
+  Calculating results for fold 9
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 84.127%; Test Accuracy = 74.444%
+Train Percentage: 80.0%
+  Calculating results for fold 0
+    Number of training examples: 648
+Indexed 648 documents with 48423 unique terms.
+    Train Accuracy = 86.42%; Test Accuracy = 70.0%
+  Calculating results for fold 1
+    Number of training examples: 648
+Indexed 648 documents with 47311 unique terms.
+    Train Accuracy = 84.877%; Test Accuracy = 75.556%
+  Calculating results for fold 2
+    Number of training examples: 648
+Indexed 648 documents with 47656 unique terms.
+    Train Accuracy = 85.185%; Test Accuracy = 64.444%
+  Calculating results for fold 3
+    Number of training examples: 648
+Indexed 648 documents with 45128 unique terms.
+    Train Accuracy = 84.722%; Test Accuracy = 76.667%
+  Calculating results for fold 4
+    Number of training examples: 648
+Indexed 648 documents with 48038 unique terms.
+    Train Accuracy = 84.722%; Test Accuracy = 72.222%
+  Calculating results for fold 5
+    Number of training examples: 648
+Indexed 648 documents with 48561 unique terms.
+    Train Accuracy = 86.265%; Test Accuracy = 64.444%
+  Calculating results for fold 6
+    Number of training examples: 648
+Indexed 648 documents with 47362 unique terms.
+    Train Accuracy = 84.414%; Test Accuracy = 73.333%
+  Calculating results for fold 7
+    Number of training examples: 648
+Indexed 648 documents with 47191 unique terms.
+    Train Accuracy = 85.648%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 85.957%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 85.031%; Test Accuracy = 77.778%
+Train Percentage: 90.0%
+  Calculating results for fold 0
+    Number of training examples: 729
+Indexed 729 documents with 51035 unique terms.
+    Train Accuracy = 86.008%; Test Accuracy = 73.333%
+  Calculating results for fold 1
+    Number of training examples: 729
+Indexed 729 documents with 49996 unique terms.
+    Train Accuracy = 85.871%; Test Accuracy = 75.556%
+  Calculating results for fold 2
+    Number of training examples: 729
+Indexed 729 documents with 50286 unique terms.
+    Train Accuracy = 86.283%; Test Accuracy = 65.556%
+  Calculating results for fold 3
+    Number of training examples: 729
+Indexed 729 documents with 47860 unique terms.
+    Train Accuracy = 86.008%; Test Accuracy = 81.111%
+  Calculating results for fold 4
+    Number of training examples: 729
+Indexed 729 documents with 50692 unique terms.
+    Train Accuracy = 86.008%; Test Accuracy = 75.556%
+  Calculating results for fold 5
+    Number of training examples: 729
+Indexed 729 documents with 51194 unique terms.
+    Train Accuracy = 86.831%; Test Accuracy = 68.889%
+  Calculating results for fold 6
+    Number of training examples: 729
+Indexed 729 documents with 50002 unique terms.
+    Train Accuracy = 85.597%; Test Accuracy = 74.444%
+  Calculating results for fold 7
+    Number of training examples: 729
+Indexed 729 documents with 50027 unique terms.
+    Train Accuracy = 86.557%; Test Accuracy = 73.333%
+  Calculating results for fold 8
+    Number of training examples: 729
+Indexed 729 documents with 51651 unique terms.
+    Train Accuracy = 85.185%; Test Accuracy = 82.222%
+  Calculating results for fold 9
+    Number of training examples: 729
+Indexed 729 documents with 51394 unique terms.
+    Train Accuracy = 85.322%; Test Accuracy = 75.556%
+Train Percentage: 100.0%
+  Calculating results for fold 0
+    Number of training examples: 810
+Indexed 810 documents with 52682 unique terms.
+    Train Accuracy = 86.049%; Test Accuracy = 76.667%
+  Calculating results for fold 1
+    Number of training examples: 810
+Indexed 810 documents with 51664 unique terms.
+    Train Accuracy = 86.543%; Test Accuracy = 76.667%
+  Calculating results for fold 2
+    Number of training examples: 810
+Indexed 810 documents with 51945 unique terms.
+    Train Accuracy = 86.667%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 810
+Indexed 810 documents with 49546 unique terms.
+    Train Accuracy = 86.667%; Test Accuracy = 78.889%
+  Calculating results for fold 4
+    Number of training examples: 810
+Indexed 810 documents with 52349 unique terms.
+    Train Accuracy = 86.049%; Test Accuracy = 73.333%
+  Calculating results for fold 5
+    Number of training examples: 810
+Indexed 810 documents with 52847 unique terms.
+    Train Accuracy = 87.407%; Test Accuracy = 71.111%
+  Calculating results for fold 6
+    Number of training examples: 810
+Indexed 810 documents with 51657 unique terms.
+    Train Accuracy = 86.543%; Test Accuracy = 75.556%
+  Calculating results for fold 7
+    Number of training examples: 810
+Indexed 810 documents with 51729 unique terms.
+    Train Accuracy = 86.667%; Test Accuracy = 75.556%
+  Calculating results for fold 8
+    Number of training examples: 810
+Indexed 810 documents with 53290 unique terms.
+    Train Accuracy = 85.926%; Test Accuracy = 74.444%
+  Calculating results for fold 9
+    Number of training examples: 810
+Indexed 810 documents with 53702 unique terms.
+    Train Accuracy = 86.049%; Test Accuracy = 77.778%
+
+Total Training time in seconds: 2.03
+Testing time per example in milliseconds: 0.2
+GNUPLOT train accuracy file is KNN_K3Train.gplot
+GNUPLOT test accuracy file is KNN_K3.gplot
+
+
+
+java ir.classifiers.TestKNN -k 5
+Loading Examples from /u/mooney/ir-code/corpora/dmoz-science/...
+Initializing KNN_K5 classifier...
+Generating 10 fold CV learning curves...
+Train Percentage: 0.0%
+  Calculating results for fold 0
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 40.0%
+  Calculating results for fold 1
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 31.111%
+  Calculating results for fold 2
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 40.0%
+  Calculating results for fold 3
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 30.0%
+  Calculating results for fold 4
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 26.667%
+  Calculating results for fold 5
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 28.889%
+  Calculating results for fold 6
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 32.222%
+  Calculating results for fold 7
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 31.111%
+  Calculating results for fold 8
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 41.111%
+  Calculating results for fold 9
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 27.778%
+Train Percentage: 1.0%
+  Calculating results for fold 0
+    Number of training examples: 9
+Indexed 9 documents with 3640 unique terms.
+    Train Accuracy = 44.444%; Test Accuracy = 47.778%
+  Calculating results for fold 1
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 66.667%; Test Accuracy = 38.889%
+  Calculating results for fold 2
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 40.0%
+  Calculating results for fold 3
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 26.667%
+  Calculating results for fold 4
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 88.889%; Test Accuracy = 28.889%
+  Calculating results for fold 5
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 40.0%
+  Calculating results for fold 6
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 88.889%; Test Accuracy = 27.778%
+  Calculating results for fold 7
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 32.222%
+  Calculating results for fold 8
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 66.667%; Test Accuracy = 43.333%
+  Calculating results for fold 9
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+Train Percentage: 5.0%
+  Calculating results for fold 0
+    Number of training examples: 42
+Indexed 42 documents with 8423 unique terms.
+    Train Accuracy = 80.952%; Test Accuracy = 57.778%
+  Calculating results for fold 1
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 69.048%; Test Accuracy = 62.222%
+  Calculating results for fold 2
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 73.81%; Test Accuracy = 54.444%
+  Calculating results for fold 3
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 69.048%; Test Accuracy = 70.0%
+  Calculating results for fold 4
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 71.429%; Test Accuracy = 52.222%
+  Calculating results for fold 5
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 73.81%; Test Accuracy = 55.556%
+  Calculating results for fold 6
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 69.048%; Test Accuracy = 66.667%
+  Calculating results for fold 7
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 71.429%; Test Accuracy = 70.0%
+  Calculating results for fold 8
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 71.429%; Test Accuracy = 55.556%
+  Calculating results for fold 9
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 71.429%; Test Accuracy = 63.333%
+Train Percentage: 10.0%
+  Calculating results for fold 0
+    Number of training examples: 81
+Indexed 81 documents with 12863 unique terms.
+    Train Accuracy = 90.123%; Test Accuracy = 65.556%
+  Calculating results for fold 1
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 69.136%; Test Accuracy = 67.778%
+  Calculating results for fold 2
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 67.901%; Test Accuracy = 53.333%
+  Calculating results for fold 3
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 71.605%; Test Accuracy = 66.667%
+  Calculating results for fold 4
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 71.605%; Test Accuracy = 61.111%
+  Calculating results for fold 5
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 75.309%; Test Accuracy = 57.778%
+  Calculating results for fold 6
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 72.84%; Test Accuracy = 73.333%
+  Calculating results for fold 7
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 75.309%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 70.37%; Test Accuracy = 61.111%
+  Calculating results for fold 9
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 71.605%; Test Accuracy = 71.111%
+Train Percentage: 20.0%
+  Calculating results for fold 0
+    Number of training examples: 162
+Indexed 162 documents with 19324 unique terms.
+    Train Accuracy = 79.63%; Test Accuracy = 68.889%
+  Calculating results for fold 1
+    Number of training examples: 162
+Indexed 162 documents with 17499 unique terms.
+    Train Accuracy = 75.309%; Test Accuracy = 77.778%
+  Calculating results for fold 2
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 80.864%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 80.864%; Test Accuracy = 73.333%
+  Calculating results for fold 4
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 76.543%; Test Accuracy = 65.556%
+  Calculating results for fold 5
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 78.395%; Test Accuracy = 65.556%
+  Calculating results for fold 6
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 78.395%; Test Accuracy = 78.889%
+  Calculating results for fold 7
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 75.926%; Test Accuracy = 72.222%
+  Calculating results for fold 8
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 77.16%; Test Accuracy = 67.778%
+  Calculating results for fold 9
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 77.778%; Test Accuracy = 72.222%
+Train Percentage: 30.0%
+  Calculating results for fold 0
+    Number of training examples: 243
+Indexed 243 documents with 27118 unique terms.
+    Train Accuracy = 81.07%; Test Accuracy = 70.0%
+  Calculating results for fold 1
+    Number of training examples: 243
+Indexed 243 documents with 25540 unique terms.
+    Train Accuracy = 75.72%; Test Accuracy = 77.778%
+  Calculating results for fold 2
+    Number of training examples: 243
+Indexed 243 documents with 26318 unique terms.
+    Train Accuracy = 84.774%; Test Accuracy = 64.444%
+  Calculating results for fold 3
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 79.424%; Test Accuracy = 74.444%
+  Calculating results for fold 4
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 79.424%; Test Accuracy = 70.0%
+  Calculating results for fold 5
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 81.07%; Test Accuracy = 65.556%
+  Calculating results for fold 6
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 80.247%; Test Accuracy = 81.111%
+  Calculating results for fold 7
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 79.835%; Test Accuracy = 74.444%
+  Calculating results for fold 8
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 82.716%; Test Accuracy = 71.111%
+  Calculating results for fold 9
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 79.424%; Test Accuracy = 73.333%
+Train Percentage: 40.0%
+  Calculating results for fold 0
+    Number of training examples: 324
+Indexed 324 documents with 32927 unique terms.
+    Train Accuracy = 82.099%; Test Accuracy = 67.778%
+  Calculating results for fold 1
+    Number of training examples: 324
+Indexed 324 documents with 31382 unique terms.
+    Train Accuracy = 80.864%; Test Accuracy = 83.333%
+  Calculating results for fold 2
+    Number of training examples: 324
+Indexed 324 documents with 32058 unique terms.
+    Train Accuracy = 86.42%; Test Accuracy = 68.889%
+  Calculating results for fold 3
+    Number of training examples: 324
+Indexed 324 documents with 28708 unique terms.
+    Train Accuracy = 80.556%; Test Accuracy = 73.333%
+  Calculating results for fold 4
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 80.556%; Test Accuracy = 72.222%
+  Calculating results for fold 5
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 81.173%; Test Accuracy = 64.444%
+  Calculating results for fold 6
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 81.173%; Test Accuracy = 84.444%
+  Calculating results for fold 7
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 80.247%; Test Accuracy = 68.889%
+  Calculating results for fold 8
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 82.099%; Test Accuracy = 74.444%
+  Calculating results for fold 9
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 81.481%; Test Accuracy = 75.556%
+Train Percentage: 50.0%
+  Calculating results for fold 0
+    Number of training examples: 405
+Indexed 405 documents with 36452 unique terms.
+    Train Accuracy = 81.975%; Test Accuracy = 71.111%
+  Calculating results for fold 1
+    Number of training examples: 405
+Indexed 405 documents with 34994 unique terms.
+    Train Accuracy = 81.235%; Test Accuracy = 80.0%
+  Calculating results for fold 2
+    Number of training examples: 405
+Indexed 405 documents with 35645 unique terms.
+    Train Accuracy = 84.444%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 405
+Indexed 405 documents with 32526 unique terms.
+    Train Accuracy = 80.741%; Test Accuracy = 75.556%
+  Calculating results for fold 4
+    Number of training examples: 405
+Indexed 405 documents with 35843 unique terms.
+    Train Accuracy = 79.506%; Test Accuracy = 73.333%
+  Calculating results for fold 5
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 82.716%; Test Accuracy = 63.333%
+  Calculating results for fold 6
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 83.704%; Test Accuracy = 78.889%
+  Calculating results for fold 7
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 82.222%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 82.222%; Test Accuracy = 78.889%
+  Calculating results for fold 9
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 82.963%; Test Accuracy = 72.222%
+Train Percentage: 60.0%
+  Calculating results for fold 0
+    Number of training examples: 486
+Indexed 486 documents with 40642 unique terms.
+    Train Accuracy = 80.864%; Test Accuracy = 71.111%
+  Calculating results for fold 1
+    Number of training examples: 486
+Indexed 486 documents with 39171 unique terms.
+    Train Accuracy = 81.687%; Test Accuracy = 75.556%
+  Calculating results for fold 2
+    Number of training examples: 486
+Indexed 486 documents with 39779 unique terms.
+    Train Accuracy = 85.391%; Test Accuracy = 68.889%
+  Calculating results for fold 3
+    Number of training examples: 486
+Indexed 486 documents with 36893 unique terms.
+    Train Accuracy = 79.835%; Test Accuracy = 76.667%
+  Calculating results for fold 4
+    Number of training examples: 486
+Indexed 486 documents with 40112 unique terms.
+    Train Accuracy = 81.481%; Test Accuracy = 75.556%
+  Calculating results for fold 5
+    Number of training examples: 486
+Indexed 486 documents with 40715 unique terms.
+    Train Accuracy = 84.774%; Test Accuracy = 70.0%
+  Calculating results for fold 6
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 82.51%; Test Accuracy = 74.444%
+  Calculating results for fold 7
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 83.539%; Test Accuracy = 72.222%
+  Calculating results for fold 8
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 83.539%; Test Accuracy = 80.0%
+  Calculating results for fold 9
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 82.716%; Test Accuracy = 73.333%
+Train Percentage: 70.0%
+  Calculating results for fold 0
+    Number of training examples: 567
+Indexed 567 documents with 44723 unique terms.
+    Train Accuracy = 82.54%; Test Accuracy = 72.222%
+  Calculating results for fold 1
+    Number of training examples: 567
+Indexed 567 documents with 43561 unique terms.
+    Train Accuracy = 82.54%; Test Accuracy = 80.0%
+  Calculating results for fold 2
+    Number of training examples: 567
+Indexed 567 documents with 43902 unique terms.
+    Train Accuracy = 85.362%; Test Accuracy = 62.222%
+  Calculating results for fold 3
+    Number of training examples: 567
+Indexed 567 documents with 41214 unique terms.
+    Train Accuracy = 82.54%; Test Accuracy = 76.667%
+  Calculating results for fold 4
+    Number of training examples: 567
+Indexed 567 documents with 44287 unique terms.
+    Train Accuracy = 80.776%; Test Accuracy = 74.444%
+  Calculating results for fold 5
+    Number of training examples: 567
+Indexed 567 documents with 44841 unique terms.
+    Train Accuracy = 85.185%; Test Accuracy = 67.778%
+  Calculating results for fold 6
+    Number of training examples: 567
+Indexed 567 documents with 43612 unique terms.
+    Train Accuracy = 82.892%; Test Accuracy = 74.444%
+  Calculating results for fold 7
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 82.011%; Test Accuracy = 68.889%
+  Calculating results for fold 8
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 82.363%; Test Accuracy = 77.778%
+  Calculating results for fold 9
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 82.011%; Test Accuracy = 70.0%
+Train Percentage: 80.0%
+  Calculating results for fold 0
+    Number of training examples: 648
+Indexed 648 documents with 48423 unique terms.
+    Train Accuracy = 81.944%; Test Accuracy = 74.444%
+  Calculating results for fold 1
+    Number of training examples: 648
+Indexed 648 documents with 47311 unique terms.
+    Train Accuracy = 80.71%; Test Accuracy = 75.556%
+  Calculating results for fold 2
+    Number of training examples: 648
+Indexed 648 documents with 47656 unique terms.
+    Train Accuracy = 83.488%; Test Accuracy = 60.0%
+  Calculating results for fold 3
+    Number of training examples: 648
+Indexed 648 documents with 45128 unique terms.
+    Train Accuracy = 82.099%; Test Accuracy = 77.778%
+  Calculating results for fold 4
+    Number of training examples: 648
+Indexed 648 documents with 48038 unique terms.
+    Train Accuracy = 81.019%; Test Accuracy = 77.778%
+  Calculating results for fold 5
+    Number of training examples: 648
+Indexed 648 documents with 48561 unique terms.
+    Train Accuracy = 83.642%; Test Accuracy = 70.0%
+  Calculating results for fold 6
+    Number of training examples: 648
+Indexed 648 documents with 47362 unique terms.
+    Train Accuracy = 80.556%; Test Accuracy = 73.333%
+  Calculating results for fold 7
+    Number of training examples: 648
+Indexed 648 documents with 47191 unique terms.
+    Train Accuracy = 82.099%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 82.716%; Test Accuracy = 75.556%
+  Calculating results for fold 9
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 82.099%; Test Accuracy = 72.222%
+Train Percentage: 90.0%
+  Calculating results for fold 0
+    Number of training examples: 729
+Indexed 729 documents with 51035 unique terms.
+    Train Accuracy = 82.853%; Test Accuracy = 77.778%
+  Calculating results for fold 1
+    Number of training examples: 729
+Indexed 729 documents with 49996 unique terms.
+    Train Accuracy = 82.03%; Test Accuracy = 77.778%
+  Calculating results for fold 2
+    Number of training examples: 729
+Indexed 729 documents with 50286 unique terms.
+    Train Accuracy = 84.362%; Test Accuracy = 62.222%
+  Calculating results for fold 3
+    Number of training examples: 729
+Indexed 729 documents with 47860 unique terms.
+    Train Accuracy = 82.305%; Test Accuracy = 80.0%
+  Calculating results for fold 4
+    Number of training examples: 729
+Indexed 729 documents with 50692 unique terms.
+    Train Accuracy = 82.167%; Test Accuracy = 74.444%
+  Calculating results for fold 5
+    Number of training examples: 729
+Indexed 729 documents with 51194 unique terms.
+    Train Accuracy = 84.911%; Test Accuracy = 67.778%
+  Calculating results for fold 6
+    Number of training examples: 729
+Indexed 729 documents with 50002 unique terms.
+    Train Accuracy = 82.03%; Test Accuracy = 74.444%
+  Calculating results for fold 7
+    Number of training examples: 729
+Indexed 729 documents with 50027 unique terms.
+    Train Accuracy = 85.048%; Test Accuracy = 74.444%
+  Calculating results for fold 8
+    Number of training examples: 729
+Indexed 729 documents with 51651 unique terms.
+    Train Accuracy = 81.619%; Test Accuracy = 82.222%
+  Calculating results for fold 9
+    Number of training examples: 729
+Indexed 729 documents with 51394 unique terms.
+    Train Accuracy = 82.03%; Test Accuracy = 71.111%
+Train Percentage: 100.0%
+  Calculating results for fold 0
+    Number of training examples: 810
+Indexed 810 documents with 52682 unique terms.
+    Train Accuracy = 84.321%; Test Accuracy = 77.778%
+  Calculating results for fold 1
+    Number of training examples: 810
+Indexed 810 documents with 51664 unique terms.
+    Train Accuracy = 82.84%; Test Accuracy = 74.444%
+  Calculating results for fold 2
+    Number of training examples: 810
+Indexed 810 documents with 51945 unique terms.
+    Train Accuracy = 85.309%; Test Accuracy = 64.444%
+  Calculating results for fold 3
+    Number of training examples: 810
+Indexed 810 documents with 49546 unique terms.
+    Train Accuracy = 82.346%; Test Accuracy = 80.0%
+  Calculating results for fold 4
+    Number of training examples: 810
+Indexed 810 documents with 52349 unique terms.
+    Train Accuracy = 83.086%; Test Accuracy = 76.667%
+  Calculating results for fold 5
+    Number of training examples: 810
+Indexed 810 documents with 52847 unique terms.
+    Train Accuracy = 85.185%; Test Accuracy = 71.111%
+  Calculating results for fold 6
+    Number of training examples: 810
+Indexed 810 documents with 51657 unique terms.
+    Train Accuracy = 83.58%; Test Accuracy = 72.222%
+  Calculating results for fold 7
+    Number of training examples: 810
+Indexed 810 documents with 51729 unique terms.
+    Train Accuracy = 84.074%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 810
+Indexed 810 documents with 53290 unique terms.
+    Train Accuracy = 83.21%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 810
+Indexed 810 documents with 53702 unique terms.
+    Train Accuracy = 83.58%; Test Accuracy = 72.222%
+
+Total Training time in seconds: 2.023
+Testing time per example in milliseconds: 0.2
+GNUPLOT train accuracy file is KNN_K5Train.gplot
+GNUPLOT test accuracy file is KNN_K5.gplot
+
+
+
+java ir.classifiers.TestRocchio
+Loading Examples from /u/mooney/ir-code/corpora/dmoz-science/...
+Initializing Rocchio classifier...
+Generating 10 fold CV learning curves...
+Train Percentage: 0.0%
+  Calculating results for fold 0
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 1
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 2
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 3
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 4
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 5
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 6
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 7
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 8
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 9
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+Train Percentage: 1.0%
+  Calculating results for fold 0
+    Number of training examples: 9
+Indexed 9 documents with 3640 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 46.667%
+  Calculating results for fold 1
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 54.444%
+  Calculating results for fold 2
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 43.333%
+  Calculating results for fold 3
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 44.444%
+  Calculating results for fold 4
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 41.111%
+  Calculating results for fold 5
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 50.0%
+  Calculating results for fold 6
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 47.778%
+  Calculating results for fold 7
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 53.333%
+  Calculating results for fold 8
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 50.0%
+  Calculating results for fold 9
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 43.333%
+Train Percentage: 5.0%
+  Calculating results for fold 0
+    Number of training examples: 42
+Indexed 42 documents with 8423 unique terms.
+    Train Accuracy = 97.619%; Test Accuracy = 66.667%
+  Calculating results for fold 1
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 72.222%
+  Calculating results for fold 2
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 58.889%
+  Calculating results for fold 3
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 66.667%
+  Calculating results for fold 4
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 60.0%
+  Calculating results for fold 5
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 55.556%
+  Calculating results for fold 6
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 60.0%
+  Calculating results for fold 7
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 71.111%
+  Calculating results for fold 8
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 67.778%
+  Calculating results for fold 9
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 65.556%
+Train Percentage: 10.0%
+  Calculating results for fold 0
+    Number of training examples: 81
+Indexed 81 documents with 12863 unique terms.
+    Train Accuracy = 96.296%; Test Accuracy = 67.778%
+  Calculating results for fold 1
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 77.778%
+  Calculating results for fold 2
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 62.222%
+  Calculating results for fold 3
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 73.333%
+  Calculating results for fold 4
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 65.556%
+  Calculating results for fold 5
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 64.444%
+  Calculating results for fold 6
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 74.444%
+  Calculating results for fold 7
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 67.778%
+  Calculating results for fold 9
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 68.889%
+Train Percentage: 20.0%
+  Calculating results for fold 0
+    Number of training examples: 162
+Indexed 162 documents with 19324 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 72.222%
+  Calculating results for fold 1
+    Number of training examples: 162
+Indexed 162 documents with 17499 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 80.0%
+  Calculating results for fold 2
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 63.333%
+  Calculating results for fold 3
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 75.556%
+  Calculating results for fold 4
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 72.222%
+  Calculating results for fold 5
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 67.778%
+  Calculating results for fold 6
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 76.667%
+  Calculating results for fold 7
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 78.889%
+  Calculating results for fold 8
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 77.778%
+  Calculating results for fold 9
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 68.889%
+Train Percentage: 30.0%
+  Calculating results for fold 0
+    Number of training examples: 243
+Indexed 243 documents with 27118 unique terms.
+    Train Accuracy = 95.885%; Test Accuracy = 73.333%
+  Calculating results for fold 1
+    Number of training examples: 243
+Indexed 243 documents with 25540 unique terms.
+    Train Accuracy = 97.119%; Test Accuracy = 81.111%
+  Calculating results for fold 2
+    Number of training examples: 243
+Indexed 243 documents with 26318 unique terms.
+    Train Accuracy = 95.473%; Test Accuracy = 65.556%
+  Calculating results for fold 3
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 95.885%; Test Accuracy = 81.111%
+  Calculating results for fold 4
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 95.885%; Test Accuracy = 71.111%
+  Calculating results for fold 5
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 95.885%; Test Accuracy = 71.111%
+  Calculating results for fold 6
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 95.885%; Test Accuracy = 82.222%
+  Calculating results for fold 7
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 95.885%; Test Accuracy = 78.889%
+  Calculating results for fold 8
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 95.885%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 95.885%; Test Accuracy = 77.778%
+Train Percentage: 40.0%
+  Calculating results for fold 0
+    Number of training examples: 324
+Indexed 324 documents with 32927 unique terms.
+    Train Accuracy = 94.136%; Test Accuracy = 67.778%
+  Calculating results for fold 1
+    Number of training examples: 324
+Indexed 324 documents with 31382 unique terms.
+    Train Accuracy = 96.296%; Test Accuracy = 83.333%
+  Calculating results for fold 2
+    Number of training examples: 324
+Indexed 324 documents with 32058 unique terms.
+    Train Accuracy = 93.21%; Test Accuracy = 68.889%
+  Calculating results for fold 3
+    Number of training examples: 324
+Indexed 324 documents with 28708 unique terms.
+    Train Accuracy = 96.914%; Test Accuracy = 83.333%
+  Calculating results for fold 4
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 95.37%; Test Accuracy = 74.444%
+  Calculating results for fold 5
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 95.37%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 95.37%; Test Accuracy = 78.889%
+  Calculating results for fold 7
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 95.37%; Test Accuracy = 81.111%
+  Calculating results for fold 8
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 95.37%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 95.37%; Test Accuracy = 81.111%
+Train Percentage: 50.0%
+  Calculating results for fold 0
+    Number of training examples: 405
+Indexed 405 documents with 36452 unique terms.
+    Train Accuracy = 93.333%; Test Accuracy = 71.111%
+  Calculating results for fold 1
+    Number of training examples: 405
+Indexed 405 documents with 34994 unique terms.
+    Train Accuracy = 92.593%; Test Accuracy = 83.333%
+  Calculating results for fold 2
+    Number of training examples: 405
+Indexed 405 documents with 35645 unique terms.
+    Train Accuracy = 92.593%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 405
+Indexed 405 documents with 32526 unique terms.
+    Train Accuracy = 93.58%; Test Accuracy = 86.667%
+  Calculating results for fold 4
+    Number of training examples: 405
+Indexed 405 documents with 35843 unique terms.
+    Train Accuracy = 92.593%; Test Accuracy = 74.444%
+  Calculating results for fold 5
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 93.827%; Test Accuracy = 76.667%
+  Calculating results for fold 6
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 93.827%; Test Accuracy = 80.0%
+  Calculating results for fold 7
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 93.827%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 93.827%; Test Accuracy = 77.778%
+  Calculating results for fold 9
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 93.827%; Test Accuracy = 80.0%
+Train Percentage: 60.0%
+  Calculating results for fold 0
+    Number of training examples: 486
+Indexed 486 documents with 40642 unique terms.
+    Train Accuracy = 93.416%; Test Accuracy = 71.111%
+  Calculating results for fold 1
+    Number of training examples: 486
+Indexed 486 documents with 39171 unique terms.
+    Train Accuracy = 91.77%; Test Accuracy = 85.556%
+  Calculating results for fold 2
+    Number of training examples: 486
+Indexed 486 documents with 39779 unique terms.
+    Train Accuracy = 91.152%; Test Accuracy = 70.0%
+  Calculating results for fold 3
+    Number of training examples: 486
+Indexed 486 documents with 36893 unique terms.
+    Train Accuracy = 93.621%; Test Accuracy = 83.333%
+  Calculating results for fold 4
+    Number of training examples: 486
+Indexed 486 documents with 40112 unique terms.
+    Train Accuracy = 91.358%; Test Accuracy = 74.444%
+  Calculating results for fold 5
+    Number of training examples: 486
+Indexed 486 documents with 40715 unique terms.
+    Train Accuracy = 93.416%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 92.798%; Test Accuracy = 81.111%
+  Calculating results for fold 7
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 92.798%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 92.798%; Test Accuracy = 78.889%
+  Calculating results for fold 9
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 92.798%; Test Accuracy = 84.444%
+Train Percentage: 70.0%
+  Calculating results for fold 0
+    Number of training examples: 567
+Indexed 567 documents with 44723 unique terms.
+    Train Accuracy = 93.122%; Test Accuracy = 73.333%
+  Calculating results for fold 1
+    Number of training examples: 567
+Indexed 567 documents with 43561 unique terms.
+    Train Accuracy = 91.887%; Test Accuracy = 87.778%
+  Calculating results for fold 2
+    Number of training examples: 567
+Indexed 567 documents with 43902 unique terms.
+    Train Accuracy = 91.711%; Test Accuracy = 71.111%
+  Calculating results for fold 3
+    Number of training examples: 567
+Indexed 567 documents with 41214 unique terms.
+    Train Accuracy = 92.945%; Test Accuracy = 83.333%
+  Calculating results for fold 4
+    Number of training examples: 567
+Indexed 567 documents with 44287 unique terms.
+    Train Accuracy = 91.534%; Test Accuracy = 75.556%
+  Calculating results for fold 5
+    Number of training examples: 567
+Indexed 567 documents with 44841 unique terms.
+    Train Accuracy = 93.298%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 567
+Indexed 567 documents with 43612 unique terms.
+    Train Accuracy = 91.005%; Test Accuracy = 81.111%
+  Calculating results for fold 7
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 91.358%; Test Accuracy = 76.667%
+  Calculating results for fold 8
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 91.358%; Test Accuracy = 77.778%
+  Calculating results for fold 9
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 91.358%; Test Accuracy = 81.111%
+Train Percentage: 80.0%
+  Calculating results for fold 0
+    Number of training examples: 648
+Indexed 648 documents with 48423 unique terms.
+    Train Accuracy = 91.204%; Test Accuracy = 74.444%
+  Calculating results for fold 1
+    Number of training examples: 648
+Indexed 648 documents with 47311 unique terms.
+    Train Accuracy = 91.204%; Test Accuracy = 86.667%
+  Calculating results for fold 2
+    Number of training examples: 648
+Indexed 648 documents with 47656 unique terms.
+    Train Accuracy = 89.66%; Test Accuracy = 68.889%
+  Calculating results for fold 3
+    Number of training examples: 648
+Indexed 648 documents with 45128 unique terms.
+    Train Accuracy = 91.049%; Test Accuracy = 84.444%
+  Calculating results for fold 4
+    Number of training examples: 648
+Indexed 648 documents with 48038 unique terms.
+    Train Accuracy = 89.66%; Test Accuracy = 75.556%
+  Calculating results for fold 5
+    Number of training examples: 648
+Indexed 648 documents with 48561 unique terms.
+    Train Accuracy = 91.667%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 648
+Indexed 648 documents with 47362 unique terms.
+    Train Accuracy = 89.198%; Test Accuracy = 80.0%
+  Calculating results for fold 7
+    Number of training examples: 648
+Indexed 648 documents with 47191 unique terms.
+    Train Accuracy = 91.358%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 91.204%; Test Accuracy = 78.889%
+  Calculating results for fold 9
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 91.204%; Test Accuracy = 82.222%
+Train Percentage: 90.0%
+  Calculating results for fold 0
+    Number of training examples: 729
+Indexed 729 documents with 51035 unique terms.
+    Train Accuracy = 89.849%; Test Accuracy = 75.556%
+  Calculating results for fold 1
+    Number of training examples: 729
+Indexed 729 documents with 49996 unique terms.
+    Train Accuracy = 89.575%; Test Accuracy = 88.889%
+  Calculating results for fold 2
+    Number of training examples: 729
+Indexed 729 documents with 50286 unique terms.
+    Train Accuracy = 89.3%; Test Accuracy = 67.778%
+  Calculating results for fold 3
+    Number of training examples: 729
+Indexed 729 documents with 47860 unique terms.
+    Train Accuracy = 90.398%; Test Accuracy = 83.333%
+  Calculating results for fold 4
+    Number of training examples: 729
+Indexed 729 documents with 50692 unique terms.
+    Train Accuracy = 89.849%; Test Accuracy = 74.444%
+  Calculating results for fold 5
+    Number of training examples: 729
+Indexed 729 documents with 51194 unique terms.
+    Train Accuracy = 91.084%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 729
+Indexed 729 documents with 50002 unique terms.
+    Train Accuracy = 88.615%; Test Accuracy = 82.222%
+  Calculating results for fold 7
+    Number of training examples: 729
+Indexed 729 documents with 50027 unique terms.
+    Train Accuracy = 90.535%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 729
+Indexed 729 documents with 51651 unique terms.
+    Train Accuracy = 89.438%; Test Accuracy = 77.778%
+  Calculating results for fold 9
+    Number of training examples: 729
+Indexed 729 documents with 51394 unique terms.
+    Train Accuracy = 89.438%; Test Accuracy = 83.333%
+Train Percentage: 100.0%
+  Calculating results for fold 0
+    Number of training examples: 810
+Indexed 810 documents with 52682 unique terms.
+    Train Accuracy = 88.889%; Test Accuracy = 74.444%
+  Calculating results for fold 1
+    Number of training examples: 810
+Indexed 810 documents with 51664 unique terms.
+    Train Accuracy = 89.383%; Test Accuracy = 87.778%
+  Calculating results for fold 2
+    Number of training examples: 810
+Indexed 810 documents with 51945 unique terms.
+    Train Accuracy = 89.63%; Test Accuracy = 70.0%
+  Calculating results for fold 3
+    Number of training examples: 810
+Indexed 810 documents with 49546 unique terms.
+    Train Accuracy = 89.383%; Test Accuracy = 83.333%
+  Calculating results for fold 4
+    Number of training examples: 810
+Indexed 810 documents with 52349 unique terms.
+    Train Accuracy = 88.889%; Test Accuracy = 75.556%
+  Calculating results for fold 5
+    Number of training examples: 810
+Indexed 810 documents with 52847 unique terms.
+    Train Accuracy = 89.877%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 810
+Indexed 810 documents with 51657 unique terms.
+    Train Accuracy = 88.642%; Test Accuracy = 81.111%
+  Calculating results for fold 7
+    Number of training examples: 810
+Indexed 810 documents with 51729 unique terms.
+    Train Accuracy = 90.0%; Test Accuracy = 78.889%
+  Calculating results for fold 8
+    Number of training examples: 810
+Indexed 810 documents with 53290 unique terms.
+    Train Accuracy = 89.383%; Test Accuracy = 78.889%
+  Calculating results for fold 9
+    Number of training examples: 810
+Indexed 810 documents with 53702 unique terms.
+    Train Accuracy = 89.259%; Test Accuracy = 84.444%
+
+Total Training time in seconds: 3.917
+Testing time per example in milliseconds: 0.49
+GNUPLOT train accuracy file is RocchioTrain.gplot
+GNUPLOT test accuracy file is Rocchio.gplot
+
+
+
+java ir.classifiers.TestRocchio -neg
+Loading Examples from /u/mooney/ir-code/corpora/dmoz-science/...
+Initializing Rocchio_neg classifier...
+Generating 10 fold CV learning curves...
+Train Percentage: 0.0%
+  Calculating results for fold 0
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 1
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 2
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 3
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 4
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 5
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 6
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 7
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 8
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+  Calculating results for fold 9
+    Number of training examples: 0
+Indexed 0 documents with 0 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 33.333%
+Train Percentage: 1.0%
+  Calculating results for fold 0
+    Number of training examples: 9
+Indexed 9 documents with 3640 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 47.778%
+  Calculating results for fold 1
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 54.444%
+  Calculating results for fold 2
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 40.0%
+  Calculating results for fold 3
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 44.444%
+  Calculating results for fold 4
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 44.444%
+  Calculating results for fold 5
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 50.0%
+  Calculating results for fold 6
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 47.778%
+  Calculating results for fold 7
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 53.333%
+  Calculating results for fold 8
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 47.778%
+  Calculating results for fold 9
+    Number of training examples: 9
+Indexed 9 documents with 1678 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 41.111%
+Train Percentage: 5.0%
+  Calculating results for fold 0
+    Number of training examples: 42
+Indexed 42 documents with 8423 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 70.0%
+  Calculating results for fold 1
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 68.889%
+  Calculating results for fold 2
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 58.889%
+  Calculating results for fold 3
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 67.778%
+  Calculating results for fold 4
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 61.111%
+  Calculating results for fold 5
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 58.889%
+  Calculating results for fold 6
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 62.222%
+  Calculating results for fold 7
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 73.333%
+  Calculating results for fold 8
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 70.0%
+  Calculating results for fold 9
+    Number of training examples: 42
+Indexed 42 documents with 5840 unique terms.
+    Train Accuracy = 100.0%; Test Accuracy = 65.556%
+Train Percentage: 10.0%
+  Calculating results for fold 0
+    Number of training examples: 81
+Indexed 81 documents with 12863 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 71.111%
+  Calculating results for fold 1
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 76.667%
+  Calculating results for fold 2
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 65.556%
+  Calculating results for fold 3
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 73.333%
+  Calculating results for fold 4
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 64.444%
+  Calculating results for fold 5
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 64.444%
+  Calculating results for fold 6
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 75.556%
+  Calculating results for fold 7
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 76.667%
+  Calculating results for fold 8
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 72.222%
+  Calculating results for fold 9
+    Number of training examples: 81
+Indexed 81 documents with 9738 unique terms.
+    Train Accuracy = 98.765%; Test Accuracy = 76.667%
+Train Percentage: 20.0%
+  Calculating results for fold 0
+    Number of training examples: 162
+Indexed 162 documents with 19324 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 73.333%
+  Calculating results for fold 1
+    Number of training examples: 162
+Indexed 162 documents with 17499 unique terms.
+    Train Accuracy = 98.148%; Test Accuracy = 81.111%
+  Calculating results for fold 2
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 61.111%
+  Calculating results for fold 3
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 78.889%
+  Calculating results for fold 4
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 71.111%
+  Calculating results for fold 5
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 71.111%
+  Calculating results for fold 6
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 81.111%
+  Calculating results for fold 7
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 78.889%
+  Calculating results for fold 8
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 77.778%
+  Calculating results for fold 9
+    Number of training examples: 162
+Indexed 162 documents with 18233 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 73.333%
+Train Percentage: 30.0%
+  Calculating results for fold 0
+    Number of training examples: 243
+Indexed 243 documents with 27118 unique terms.
+    Train Accuracy = 97.942%; Test Accuracy = 73.333%
+  Calculating results for fold 1
+    Number of training examples: 243
+Indexed 243 documents with 25540 unique terms.
+    Train Accuracy = 97.942%; Test Accuracy = 84.444%
+  Calculating results for fold 2
+    Number of training examples: 243
+Indexed 243 documents with 26318 unique terms.
+    Train Accuracy = 96.708%; Test Accuracy = 63.333%
+  Calculating results for fold 3
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 80.0%
+  Calculating results for fold 4
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 70.0%
+  Calculating results for fold 5
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 73.333%
+  Calculating results for fold 6
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 84.444%
+  Calculating results for fold 7
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 78.889%
+  Calculating results for fold 8
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 83.333%
+  Calculating results for fold 9
+    Number of training examples: 243
+Indexed 243 documents with 22977 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 80.0%
+Train Percentage: 40.0%
+  Calculating results for fold 0
+    Number of training examples: 324
+Indexed 324 documents with 32927 unique terms.
+    Train Accuracy = 96.605%; Test Accuracy = 72.222%
+  Calculating results for fold 1
+    Number of training examples: 324
+Indexed 324 documents with 31382 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 88.889%
+  Calculating results for fold 2
+    Number of training examples: 324
+Indexed 324 documents with 32058 unique terms.
+    Train Accuracy = 95.679%; Test Accuracy = 68.889%
+  Calculating results for fold 3
+    Number of training examples: 324
+Indexed 324 documents with 28708 unique terms.
+    Train Accuracy = 97.84%; Test Accuracy = 83.333%
+  Calculating results for fold 4
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 74.444%
+  Calculating results for fold 5
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 80.0%
+  Calculating results for fold 6
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 81.111%
+  Calculating results for fold 7
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 81.111%
+  Calculating results for fold 8
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 83.333%
+  Calculating results for fold 9
+    Number of training examples: 324
+Indexed 324 documents with 30474 unique terms.
+    Train Accuracy = 97.531%; Test Accuracy = 83.333%
+Train Percentage: 50.0%
+  Calculating results for fold 0
+    Number of training examples: 405
+Indexed 405 documents with 36452 unique terms.
+    Train Accuracy = 95.062%; Test Accuracy = 73.333%
+  Calculating results for fold 1
+    Number of training examples: 405
+Indexed 405 documents with 34994 unique terms.
+    Train Accuracy = 95.802%; Test Accuracy = 84.444%
+  Calculating results for fold 2
+    Number of training examples: 405
+Indexed 405 documents with 35645 unique terms.
+    Train Accuracy = 95.309%; Test Accuracy = 73.333%
+  Calculating results for fold 3
+    Number of training examples: 405
+Indexed 405 documents with 32526 unique terms.
+    Train Accuracy = 95.062%; Test Accuracy = 86.667%
+  Calculating results for fold 4
+    Number of training examples: 405
+Indexed 405 documents with 35843 unique terms.
+    Train Accuracy = 94.321%; Test Accuracy = 75.556%
+  Calculating results for fold 5
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 96.79%; Test Accuracy = 80.0%
+  Calculating results for fold 6
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 96.79%; Test Accuracy = 82.222%
+  Calculating results for fold 7
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 96.79%; Test Accuracy = 80.0%
+  Calculating results for fold 8
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 96.79%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 405
+Indexed 405 documents with 36619 unique terms.
+    Train Accuracy = 96.79%; Test Accuracy = 83.333%
+Train Percentage: 60.0%
+  Calculating results for fold 0
+    Number of training examples: 486
+Indexed 486 documents with 40642 unique terms.
+    Train Accuracy = 95.062%; Test Accuracy = 73.333%
+  Calculating results for fold 1
+    Number of training examples: 486
+Indexed 486 documents with 39171 unique terms.
+    Train Accuracy = 94.856%; Test Accuracy = 84.444%
+  Calculating results for fold 2
+    Number of training examples: 486
+Indexed 486 documents with 39779 unique terms.
+    Train Accuracy = 94.033%; Test Accuracy = 72.222%
+  Calculating results for fold 3
+    Number of training examples: 486
+Indexed 486 documents with 36893 unique terms.
+    Train Accuracy = 95.473%; Test Accuracy = 84.444%
+  Calculating results for fold 4
+    Number of training examples: 486
+Indexed 486 documents with 40112 unique terms.
+    Train Accuracy = 93.416%; Test Accuracy = 76.667%
+  Calculating results for fold 5
+    Number of training examples: 486
+Indexed 486 documents with 40715 unique terms.
+    Train Accuracy = 95.679%; Test Accuracy = 78.889%
+  Calculating results for fold 6
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 95.062%; Test Accuracy = 83.333%
+  Calculating results for fold 7
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 95.062%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 95.062%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 486
+Indexed 486 documents with 39956 unique terms.
+    Train Accuracy = 95.062%; Test Accuracy = 85.556%
+Train Percentage: 70.0%
+  Calculating results for fold 0
+    Number of training examples: 567
+Indexed 567 documents with 44723 unique terms.
+    Train Accuracy = 95.591%; Test Accuracy = 73.333%
+  Calculating results for fold 1
+    Number of training examples: 567
+Indexed 567 documents with 43561 unique terms.
+    Train Accuracy = 94.004%; Test Accuracy = 90.0%
+  Calculating results for fold 2
+    Number of training examples: 567
+Indexed 567 documents with 43902 unique terms.
+    Train Accuracy = 94.356%; Test Accuracy = 74.444%
+  Calculating results for fold 3
+    Number of training examples: 567
+Indexed 567 documents with 41214 unique terms.
+    Train Accuracy = 94.709%; Test Accuracy = 82.222%
+  Calculating results for fold 4
+    Number of training examples: 567
+Indexed 567 documents with 44287 unique terms.
+    Train Accuracy = 93.474%; Test Accuracy = 78.889%
+  Calculating results for fold 5
+    Number of training examples: 567
+Indexed 567 documents with 44841 unique terms.
+    Train Accuracy = 94.885%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 567
+Indexed 567 documents with 43612 unique terms.
+    Train Accuracy = 93.474%; Test Accuracy = 83.333%
+  Calculating results for fold 7
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 93.474%; Test Accuracy = 77.778%
+  Calculating results for fold 8
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 93.474%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 567
+Indexed 567 documents with 43762 unique terms.
+    Train Accuracy = 93.474%; Test Accuracy = 84.444%
+Train Percentage: 80.0%
+  Calculating results for fold 0
+    Number of training examples: 648
+Indexed 648 documents with 48423 unique terms.
+    Train Accuracy = 93.364%; Test Accuracy = 75.556%
+  Calculating results for fold 1
+    Number of training examples: 648
+Indexed 648 documents with 47311 unique terms.
+    Train Accuracy = 93.21%; Test Accuracy = 90.0%
+  Calculating results for fold 2
+    Number of training examples: 648
+Indexed 648 documents with 47656 unique terms.
+    Train Accuracy = 92.284%; Test Accuracy = 70.0%
+  Calculating results for fold 3
+    Number of training examples: 648
+Indexed 648 documents with 45128 unique terms.
+    Train Accuracy = 93.827%; Test Accuracy = 85.556%
+  Calculating results for fold 4
+    Number of training examples: 648
+Indexed 648 documents with 48038 unique terms.
+    Train Accuracy = 92.901%; Test Accuracy = 77.778%
+  Calculating results for fold 5
+    Number of training examples: 648
+Indexed 648 documents with 48561 unique terms.
+    Train Accuracy = 94.29%; Test Accuracy = 78.889%
+  Calculating results for fold 6
+    Number of training examples: 648
+Indexed 648 documents with 47362 unique terms.
+    Train Accuracy = 91.204%; Test Accuracy = 83.333%
+  Calculating results for fold 7
+    Number of training examples: 648
+Indexed 648 documents with 47191 unique terms.
+    Train Accuracy = 93.827%; Test Accuracy = 78.889%
+  Calculating results for fold 8
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 93.673%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 648
+Indexed 648 documents with 47375 unique terms.
+    Train Accuracy = 93.673%; Test Accuracy = 86.667%
+Train Percentage: 90.0%
+  Calculating results for fold 0
+    Number of training examples: 729
+Indexed 729 documents with 51035 unique terms.
+    Train Accuracy = 93.004%; Test Accuracy = 75.556%
+  Calculating results for fold 1
+    Number of training examples: 729
+Indexed 729 documents with 49996 unique terms.
+    Train Accuracy = 92.318%; Test Accuracy = 90.0%
+  Calculating results for fold 2
+    Number of training examples: 729
+Indexed 729 documents with 50286 unique terms.
+    Train Accuracy = 92.73%; Test Accuracy = 72.222%
+  Calculating results for fold 3
+    Number of training examples: 729
+Indexed 729 documents with 47860 unique terms.
+    Train Accuracy = 92.73%; Test Accuracy = 84.444%
+  Calculating results for fold 4
+    Number of training examples: 729
+Indexed 729 documents with 50692 unique terms.
+    Train Accuracy = 92.181%; Test Accuracy = 75.556%
+  Calculating results for fold 5
+    Number of training examples: 729
+Indexed 729 documents with 51194 unique terms.
+    Train Accuracy = 93.278%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 729
+Indexed 729 documents with 50002 unique terms.
+    Train Accuracy = 92.318%; Test Accuracy = 84.444%
+  Calculating results for fold 7
+    Number of training examples: 729
+Indexed 729 documents with 50027 unique terms.
+    Train Accuracy = 93.141%; Test Accuracy = 80.0%
+  Calculating results for fold 8
+    Number of training examples: 729
+Indexed 729 documents with 51651 unique terms.
+    Train Accuracy = 92.181%; Test Accuracy = 80.0%
+  Calculating results for fold 9
+    Number of training examples: 729
+Indexed 729 documents with 51394 unique terms.
+    Train Accuracy = 92.455%; Test Accuracy = 87.778%
+Train Percentage: 100.0%
+  Calculating results for fold 0
+    Number of training examples: 810
+Indexed 810 documents with 52682 unique terms.
+    Train Accuracy = 91.975%; Test Accuracy = 75.556%
+  Calculating results for fold 1
+    Number of training examples: 810
+Indexed 810 documents with 51664 unique terms.
+    Train Accuracy = 91.605%; Test Accuracy = 92.222%
+  Calculating results for fold 2
+    Number of training examples: 810
+Indexed 810 documents with 51945 unique terms.
+    Train Accuracy = 91.728%; Test Accuracy = 73.333%
+  Calculating results for fold 3
+    Number of training examples: 810
+Indexed 810 documents with 49546 unique terms.
+    Train Accuracy = 91.235%; Test Accuracy = 85.556%
+  Calculating results for fold 4
+    Number of training examples: 810
+Indexed 810 documents with 52349 unique terms.
+    Train Accuracy = 91.235%; Test Accuracy = 75.556%
+  Calculating results for fold 5
+    Number of training examples: 810
+Indexed 810 documents with 52847 unique terms.
+    Train Accuracy = 92.346%; Test Accuracy = 77.778%
+  Calculating results for fold 6
+    Number of training examples: 810
+Indexed 810 documents with 51657 unique terms.
+    Train Accuracy = 90.741%; Test Accuracy = 82.222%
+  Calculating results for fold 7
+    Number of training examples: 810
+Indexed 810 documents with 51729 unique terms.
+    Train Accuracy = 92.346%; Test Accuracy = 81.111%
+  Calculating results for fold 8
+    Number of training examples: 810
+Indexed 810 documents with 53290 unique terms.
+    Train Accuracy = 91.358%; Test Accuracy = 81.111%
+  Calculating results for fold 9
+    Number of training examples: 810
+Indexed 810 documents with 53702 unique terms.
+    Train Accuracy = 92.593%; Test Accuracy = 88.889%
+
+Total Training time in seconds: 7.471
+Testing time per example in milliseconds: 1.52
+GNUPLOT train accuracy file is Rocchio_negTrain.gplot
+GNUPLOT test accuracy file is Rocchio_neg.gplot
+
+Script done on Wed 30 Nov 2016 08:33:10 PM CST

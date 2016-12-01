@@ -13,9 +13,19 @@ import ir.utilities.*;
  */
 public class KNN extends Classifier {
 
-
+  /**
+   * Inverted index that holds examples
+   */
   InvertedIndex invIndx;
+
+  /**
+   * Used to map results to categories
+   */
   HashMap<File, Integer> training_examples;
+
+  /**
+   * Number of results to consider
+   */
   int k = 5;
 
   /**
@@ -74,8 +84,7 @@ public class KNN extends Classifier {
 
 
   /**
-   * Trains the Naive Bayes classifier - estimates the prior probs and calculates the
-   * counts for each feature in different categories
+   * Trains the KNN classifier - create the inverted index and map
    *
    * @param trainExamples The vector of training examples
    */
@@ -90,7 +99,7 @@ public class KNN extends Classifier {
   }
 
   /**
-   * Categorizes the test example using the trained Naive Bayes classifier, returning true if
+   * Categorizes the test example using the trained KNN classifier, returning true if
    * the predicted category is same as the actual category
    *
    * @param testExample The test example to be categorized

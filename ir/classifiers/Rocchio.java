@@ -13,10 +13,20 @@ import ir.utilities.*;
  */
 public class Rocchio extends Classifier {
 
+  /**
+   * Inverted index that holds examples
+   */
   InvertedIndex invIndx;
-  HashMapVector[] vectors;
-  boolean neg = false;
 
+  /**
+   * Holds the vectores per category
+   */
+  HashMapVector[] vectors;
+
+  /**
+   * Determines whether to consider negative categories
+   */
+  boolean neg = false;
 
   /**
    * Name of classifier
@@ -72,8 +82,9 @@ public class Rocchio extends Classifier {
   }
 
   /**
-   * Trains the Naive Bayes classifier - estimates the prior probs and calculates the
-   * counts for each feature in different categories
+   * Trains the Naive Bayes classifier - makes an inverted index, creates
+   * an empty hash vector for each category and then adds the hash
+   * vectors of all examples mapped to a category to that category's vector. 
    *
    * @param trainExamples The vector of training examples
    */
@@ -104,7 +115,7 @@ public class Rocchio extends Classifier {
   }
 
   /**
-   * Categorizes the test example using the trained Naive Bayes classifier, returning true if
+   * Categorizes the test example using the trained Rocchio classifier, returning true if
    * the predicted category is same as the actual category
    *
    * @param testExample The test example to be categorized
