@@ -24,3 +24,8 @@ plot:
 	gnuplot All.gplot | ps2pdf - eval.pdf
 plot_train:
 	gnuplot AllTrain.gplot | ps2pdf - train.pdf
+report:plot plot_train
+	pdfunite proj4_et7226_report.pdf train.pdf eval.pdf out.pdf
+	mv out.pdf proj4_et7226_report.pdf
+	rm eval.pdf
+	rm train.pdf

@@ -64,12 +64,6 @@ public class KNN extends Classifier {
     numCategories = categories.length;
   }
 
-  /**
-   * Sets the debug flag
-   */
-  public void setDebug(boolean bool) {
-    debug = bool;
-  }
 
   /**
    * Returns the name
@@ -78,13 +72,6 @@ public class KNN extends Classifier {
     return name + "_K" + k;
   }
 
-
-  /**
-   * Returns training result
-   */
-  public InvertedIndex getTrainResult() {
-    return invIndx;
-  }
 
   /**
    * Trains the Naive Bayes classifier - estimates the prior probs and calculates the

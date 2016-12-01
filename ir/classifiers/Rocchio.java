@@ -65,13 +65,6 @@ public class Rocchio extends Classifier {
   }
 
   /**
-   * Sets the debug flag
-   */
-  public void setDebug(boolean bool) {
-    debug = bool;
-  }
-
-  /**
    * Returns the name
    */
   public String getName() {
